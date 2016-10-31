@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3e1d0584-552a-4163-8473-64f7d142b303",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "3e1d0584-552a-4163-8473-64f7d142b303" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "3e1d0584-552a-4163-8473-64f7d142b303" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "41EB2722-BD76-40CC-BDC3-70AFD753DB64",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "3e1d0584-552a-4163-8473-64f7d142b303" : "ubuntu_shared\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "greThesaurus",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "greThesaurus\/greThesaurus.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/subversion.ews.illinois.edu\/svn\/fa15-cs241",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3e1d0584-552a-4163-8473-64f7d142b303"
+    }
+  ]
+}

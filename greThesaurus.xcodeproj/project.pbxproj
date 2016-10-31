@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA11DC6D21A00358049 /* AppDelegate.swift */; };
+		A39E3AA41DC6D21A00358049 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA31DC6D21A00358049 /* MasterViewController.swift */; };
+		A39E3AA61DC6D21A00358049 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA51DC6D21A00358049 /* DetailViewController.swift */; };
+		A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AA71DC6D21A00358049 /* Main.storyboard */; };
+		A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAA1DC6D21A00358049 /* Assets.xcassets */; };
+		A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */; };
+		A39E3AB91DC6D21A00358049 /* greThesaurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */; };
+		A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A39E3AB51DC6D21A00358049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A39E3A961DC6D21A00358049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A39E3A9D1DC6D21A00358049;
+			remoteInfo = greThesaurus;
+		};
+		A39E3AC01DC6D21A00358049 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A39E3A961DC6D21A00358049 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A39E3A9D1DC6D21A00358049;
+			remoteInfo = greThesaurus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A39E3A9E1DC6D21A00358049 /* greThesaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greThesaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39E3AA11DC6D21A00358049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A39E3AA31DC6D21A00358049 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		A39E3AA51DC6D21A00358049 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A39E3AA81DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A39E3AAA1DC6D21A00358049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A39E3AAD1DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A39E3AAF1DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39E3AB41DC6D21A00358049 /* greThesaurusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greThesaurusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greThesaurusTests.swift; sourceTree = "<group>"; };
+		A39E3ABA1DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A39E3ABF1DC6D21A00358049 /* greThesaurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greThesaurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greThesaurusUITests.swift; sourceTree = "<group>"; };
+		A39E3AC51DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A39E3A9B1DC6D21A00358049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3AB11DC6D21A00358049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3ABC1DC6D21A00358049 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A39E3A951DC6D21A00358049 = {
+			isa = PBXGroup;
+			children = (
+				A39E3AA01DC6D21A00358049 /* greThesaurus */,
+				A39E3AB71DC6D21A00358049 /* greThesaurusTests */,
+				A39E3AC21DC6D21A00358049 /* greThesaurusUITests */,
+				A39E3A9F1DC6D21A00358049 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A39E3A9F1DC6D21A00358049 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A39E3A9E1DC6D21A00358049 /* greThesaurus.app */,
+				A39E3AB41DC6D21A00358049 /* greThesaurusTests.xctest */,
+				A39E3ABF1DC6D21A00358049 /* greThesaurusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A39E3AA01DC6D21A00358049 /* greThesaurus */ = {
+			isa = PBXGroup;
+			children = (
+				A39E3AA11DC6D21A00358049 /* AppDelegate.swift */,
+				A39E3AA31DC6D21A00358049 /* MasterViewController.swift */,
+				A39E3AA51DC6D21A00358049 /* DetailViewController.swift */,
+				A39E3AA71DC6D21A00358049 /* Main.storyboard */,
+				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
+				A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */,
+				A39E3AAF1DC6D21A00358049 /* Info.plist */,
+			);
+			path = greThesaurus;
+			sourceTree = "<group>";
+		};
+		A39E3AB71DC6D21A00358049 /* greThesaurusTests */ = {
+			isa = PBXGroup;
+			children = (
+				A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */,
+				A39E3ABA1DC6D21A00358049 /* Info.plist */,
+			);
+			path = greThesaurusTests;
+			sourceTree = "<group>";
+		};
+		A39E3AC21DC6D21A00358049 /* greThesaurusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */,
+				A39E3AC51DC6D21A00358049 /* Info.plist */,
+			);
+			path = greThesaurusUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A39E3A9D1DC6D21A00358049 /* greThesaurus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39E3AC81DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurus" */;
+			buildPhases = (
+				A39E3A9A1DC6D21A00358049 /* Sources */,
+				A39E3A9B1DC6D21A00358049 /* Frameworks */,
+				A39E3A9C1DC6D21A00358049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = greThesaurus;
+			productName = greThesaurus;
+			productReference = A39E3A9E1DC6D21A00358049 /* greThesaurus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A39E3AB31DC6D21A00358049 /* greThesaurusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39E3ACB1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusTests" */;
+			buildPhases = (
+				A39E3AB01DC6D21A00358049 /* Sources */,
+				A39E3AB11DC6D21A00358049 /* Frameworks */,
+				A39E3AB21DC6D21A00358049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39E3AB61DC6D21A00358049 /* PBXTargetDependency */,
+			);
+			name = greThesaurusTests;
+			productName = greThesaurusTests;
+			productReference = A39E3AB41DC6D21A00358049 /* greThesaurusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A39E3ABE1DC6D21A00358049 /* greThesaurusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A39E3ACE1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusUITests" */;
+			buildPhases = (
+				A39E3ABB1DC6D21A00358049 /* Sources */,
+				A39E3ABC1DC6D21A00358049 /* Frameworks */,
+				A39E3ABD1DC6D21A00358049 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A39E3AC11DC6D21A00358049 /* PBXTargetDependency */,
+			);
+			name = greThesaurusUITests;
+			productName = greThesaurusUITests;
+			productReference = A39E3ABF1DC6D21A00358049 /* greThesaurusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A39E3A961DC6D21A00358049 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = kelu2zhao102;
+				TargetAttributes = {
+					A39E3A9D1DC6D21A00358049 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					A39E3AB31DC6D21A00358049 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A39E3A9D1DC6D21A00358049;
+					};
+					A39E3ABE1DC6D21A00358049 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A39E3A9D1DC6D21A00358049;
+					};
+				};
+			};
+			buildConfigurationList = A39E3A991DC6D21A00358049 /* Build configuration list for PBXProject "greThesaurus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A39E3A951DC6D21A00358049;
+			productRefGroup = A39E3A9F1DC6D21A00358049 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A39E3A9D1DC6D21A00358049 /* greThesaurus */,
+				A39E3AB31DC6D21A00358049 /* greThesaurusTests */,
+				A39E3ABE1DC6D21A00358049 /* greThesaurusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A39E3A9C1DC6D21A00358049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */,
+				A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */,
+				A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3AB21DC6D21A00358049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3ABD1DC6D21A00358049 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A39E3A9A1DC6D21A00358049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39E3AA61DC6D21A00358049 /* DetailViewController.swift in Sources */,
+				A39E3AA41DC6D21A00358049 /* MasterViewController.swift in Sources */,
+				A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3AB01DC6D21A00358049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39E3AB91DC6D21A00358049 /* greThesaurusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A39E3ABB1DC6D21A00358049 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A39E3AB61DC6D21A00358049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A39E3A9D1DC6D21A00358049 /* greThesaurus */;
+			targetProxy = A39E3AB51DC6D21A00358049 /* PBXContainerItemProxy */;
+		};
+		A39E3AC11DC6D21A00358049 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A39E3A9D1DC6D21A00358049 /* greThesaurus */;
+			targetProxy = A39E3AC01DC6D21A00358049 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A39E3AA71DC6D21A00358049 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A39E3AA81DC6D21A00358049 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A39E3AAD1DC6D21A00358049 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A39E3AC61DC6D21A00358049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A39E3AC71DC6D21A00358049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A39E3AC91DC6D21A00358049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = greThesaurus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A39E3ACA1DC6D21A00358049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = greThesaurus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A39E3ACC1DC6D21A00358049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = greThesaurusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/greThesaurus.app/greThesaurus";
+			};
+			name = Debug;
+		};
+		A39E3ACD1DC6D21A00358049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = greThesaurusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/greThesaurus.app/greThesaurus";
+			};
+			name = Release;
+		};
+		A39E3ACF1DC6D21A00358049 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = greThesaurusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = greThesaurus;
+			};
+			name = Debug;
+		};
+		A39E3AD01DC6D21A00358049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = greThesaurusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = greThesaurus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A39E3A991DC6D21A00358049 /* Build configuration list for PBXProject "greThesaurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39E3AC61DC6D21A00358049 /* Debug */,
+				A39E3AC71DC6D21A00358049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A39E3AC81DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39E3AC91DC6D21A00358049 /* Debug */,
+				A39E3ACA1DC6D21A00358049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A39E3ACB1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39E3ACC1DC6D21A00358049 /* Debug */,
+				A39E3ACD1DC6D21A00358049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A39E3ACE1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A39E3ACF1DC6D21A00358049 /* Debug */,
+				A39E3AD01DC6D21A00358049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A39E3A961DC6D21A00358049 /* Project object */;
+}
