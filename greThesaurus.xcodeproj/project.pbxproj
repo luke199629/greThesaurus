@@ -193,6 +193,7 @@
 				TargetAttributes = {
 					A39E3A9D1DC6D21A00358049 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = NJGXMPZ4GH;
 						ProvisioningStyle = Automatic;
 					};
 					A39E3AB31DC6D21A00358049 = {
@@ -410,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJGXMPZ4GH;
 				INFOPLIST_FILE = greThesaurus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurus;
@@ -422,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NJGXMPZ4GH;
 				INFOPLIST_FILE = greThesaurus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kelu2zhao102.greThesaurus;
