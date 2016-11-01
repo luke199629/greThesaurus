@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA11DC6D21A00358049 /* AppDelegate.swift */; };
-		A39E3AA41DC6D21A00358049 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA31DC6D21A00358049 /* MasterViewController.swift */; };
-		A39E3AA61DC6D21A00358049 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA51DC6D21A00358049 /* DetailViewController.swift */; };
 		A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AA71DC6D21A00358049 /* Main.storyboard */; };
 		A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAA1DC6D21A00358049 /* Assets.xcassets */; };
 		A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */; };
 		A39E3AB91DC6D21A00358049 /* greThesaurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */; };
 		A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */; };
+		A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		A39E3A9E1DC6D21A00358049 /* greThesaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greThesaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39E3AA11DC6D21A00358049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A39E3AA31DC6D21A00358049 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		A39E3AA51DC6D21A00358049 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A39E3AA81DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A39E3AAA1DC6D21A00358049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A39E3AAD1DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		A39E3ABF1DC6D21A00358049 /* greThesaurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greThesaurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greThesaurusUITests.swift; sourceTree = "<group>"; };
 		A39E3AC51DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				A39E3AA11DC6D21A00358049 /* AppDelegate.swift */,
-				A39E3AA31DC6D21A00358049 /* MasterViewController.swift */,
-				A39E3AA51DC6D21A00358049 /* DetailViewController.swift */,
 				A39E3AA71DC6D21A00358049 /* Main.storyboard */,
 				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
 				A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */,
 				A39E3AAF1DC6D21A00358049 /* Info.plist */,
+				A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */,
 			);
 			path = greThesaurus;
 			sourceTree = "<group>";
@@ -262,9 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39E3AA61DC6D21A00358049 /* DetailViewController.swift in Sources */,
-				A39E3AA41DC6D21A00358049 /* MasterViewController.swift in Sources */,
 				A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */,
+				A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +503,7 @@
 				A39E3ACA1DC6D21A00358049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A39E3ACB1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +512,7 @@
 				A39E3ACD1DC6D21A00358049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A39E3ACE1DC6D21A00358049 /* Build configuration list for PBXNativeTarget "greThesaurusUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +521,7 @@
 				A39E3AD01DC6D21A00358049 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
