@@ -15,6 +15,6 @@ class MainViewController:UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        cardView.backgroundColor = .green
+        cardView.backgroundColor = .blue
     }
 }

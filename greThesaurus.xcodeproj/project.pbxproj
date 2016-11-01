@@ -99,10 +99,10 @@
 			children = (
 				A39E3AA11DC6D21A00358049 /* AppDelegate.swift */,
 				A39E3AA71DC6D21A00358049 /* Main.storyboard */,
-				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
 				A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */,
 				A39E3AAF1DC6D21A00358049 /* Info.plist */,
 				A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */,
+				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
 			);
 			path = greThesaurus;
 			sourceTree = "<group>";
