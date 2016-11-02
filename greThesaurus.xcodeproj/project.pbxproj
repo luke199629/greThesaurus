@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A39725E21DC9C363009D3828 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E11DC9C363009D3828 /* HomeViewController.swift */; };
+		A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E31DC9D134009D3828 /* MyWordsViewController.swift */; };
+		A39725E61DC9DD73009D3828 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E51DC9DD73009D3828 /* ContentCell.swift */; };
+		A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */; };
+		A39725EC1DC9E483009D3828 /* SettingsContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725EB1DC9E483009D3828 /* SettingsContentCell.swift */; };
 		A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AA11DC6D21A00358049 /* AppDelegate.swift */; };
 		A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AA71DC6D21A00358049 /* Main.storyboard */; };
 		A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAA1DC6D21A00358049 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A39725E11DC9C363009D3828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		A39725E31DC9D134009D3828 /* MyWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWordsViewController.swift; sourceTree = "<group>"; };
+		A39725E51DC9DD73009D3828 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A39725EB1DC9E483009D3828 /* SettingsContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContentCell.swift; sourceTree = "<group>"; };
 		A39E3A9E1DC6D21A00358049 /* greThesaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greThesaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39E3AA11DC6D21A00358049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39E3AA81DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -100,8 +110,13 @@
 		A39E3AA01DC6D21A00358049 /* greThesaurus */ = {
 			isa = PBXGroup;
 			children = (
+				A39725E11DC9C363009D3828 /* HomeViewController.swift */,
 				A39E3AA11DC6D21A00358049 /* AppDelegate.swift */,
 				A39E3AA71DC6D21A00358049 /* Main.storyboard */,
+				A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */,
+				A39725E51DC9DD73009D3828 /* ContentCell.swift */,
+				A39725EB1DC9E483009D3828 /* SettingsContentCell.swift */,
+				A39725E31DC9D134009D3828 /* MyWordsViewController.swift */,
 				A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */,
 				A39E3AAF1DC6D21A00358049 /* Info.plist */,
 				A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */,
@@ -266,6 +281,11 @@
 			files = (
 				A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */,
 				A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */,
+				A39725EC1DC9E483009D3828 /* SettingsContentCell.swift in Sources */,
+				A39725E61DC9DD73009D3828 /* ContentCell.swift in Sources */,
+				A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */,
+				A39725E21DC9C363009D3828 /* HomeViewController.swift in Sources */,
+				A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
