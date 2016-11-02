@@ -13,6 +13,7 @@
 		A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39E3AAC1DC6D21A00358049 /* LaunchScreen.storyboard */; };
 		A39E3AB91DC6D21A00358049 /* greThesaurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */; };
 		A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */; };
+		A3B625691DC967A8003CF4F7 /* custom_icons in Resources */ = {isa = PBXBuildFile; fileRef = A3B625681DC967A8003CF4F7 /* custom_icons */; };
 		A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +47,7 @@
 		A39E3ABF1DC6D21A00358049 /* greThesaurusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greThesaurusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greThesaurusUITests.swift; sourceTree = "<group>"; };
 		A39E3AC51DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B625681DC967A8003CF4F7 /* custom_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = custom_icons; sourceTree = "<group>"; };
 		A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 		A39E3A951DC6D21A00358049 = {
 			isa = PBXGroup;
 			children = (
+				A3B625681DC967A8003CF4F7 /* custom_icons */,
 				A39E3AA01DC6D21A00358049 /* greThesaurus */,
 				A39E3AB71DC6D21A00358049 /* greThesaurusTests */,
 				A39E3AC21DC6D21A00358049 /* greThesaurusUITests */,
@@ -235,6 +238,7 @@
 			files = (
 				A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */,
 				A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */,
+				A3B625691DC967A8003CF4F7 /* custom_icons in Resources */,
 				A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
