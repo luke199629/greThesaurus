@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		A309505F1DCA929A008C4543 /* lexicon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = lexicon.csv; sourceTree = "<group>"; };
-		A39725E11DC9C363009D3828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		A39725E11DC9C363009D3828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A39725E31DC9D134009D3828 /* MyWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWordsViewController.swift; sourceTree = "<group>"; };
 		A39725E51DC9DD73009D3828 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
