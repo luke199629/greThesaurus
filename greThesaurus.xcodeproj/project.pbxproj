@@ -45,6 +45,7 @@
 		A39725E51DC9DD73009D3828 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A39725EB1DC9E483009D3828 /* SettingsContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContentCell.swift; sourceTree = "<group>"; };
+		A39725ED1DC9EC3D009D3828 /* ref.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ref.txt; sourceTree = "<group>"; };
 		A39E3A9E1DC6D21A00358049 /* greThesaurus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greThesaurus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39E3AA11DC6D21A00358049 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A39E3AA81DC6D21A00358049 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		A39E3A951DC6D21A00358049 = {
 			isa = PBXGroup;
 			children = (
+				A39725ED1DC9EC3D009D3828 /* ref.txt */,
 				A3B625681DC967A8003CF4F7 /* custom_icons */,
 				A39E3AA01DC6D21A00358049 /* greThesaurus */,
 				A39E3AB71DC6D21A00358049 /* greThesaurusTests */,
