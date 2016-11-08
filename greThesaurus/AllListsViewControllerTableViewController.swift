@@ -1,36 +1,14 @@
 //
-//  MyWordsViewController.swift
+//  AllListsViewControllerTableViewController.swift
 //  greThesaurus
 //
-//  Created by Ke Lu on 11/2/16.
+//  Created by Ke Lu on 11/7/16.
 //  Copyright © 2016 kelu2zhao102. All rights reserved.
 //
 
 import UIKit
-struct MyWordsContent {
-    var name: String?
-    var detail: String?
-    var ratings: Int
-    
-    init(name: String?, detail: String?, ratings: Int) {
-        self.name = name
-        self.detail = detail
-        self.ratings = ratings
-    }
-    
-    
-}
 
-let MyWordsContentData = [
-    MyWordsContent(name: "Level A", detail: "Rare", ratings: 1),
-    MyWordsContent(name: "Level B", detail: "Medium-rare", ratings: 2),
-    MyWordsContent(name: "Level C", detail: "Medium", ratings: 3),
-    MyWordsContent(name: "Level D", detail: "Medium-well", ratings: 4),
-    MyWordsContent(name: "Level E", detail: "Well Done", ratings: 5)]
-
-class MyWordsViewController: UITableViewController {
-    var myWordsData: [MyWordsContent] = MyWordsContentData
-    
+class AllListsViewControllerTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,44 +27,41 @@ class MyWordsViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /*
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        // return 0
-        return 1
+        return 0
     }
+    */
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        // return 0
-        return myWordsData.count
+        return 3
     }
 
+    func makeCell(for tableView: UITableView) -> UITableViewCell {
+        let cellIdentifier = "Cell"
+        if let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) {
+            return cell
+        } else {
+            return UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        }
+    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // let cell = tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath)
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath) as! ContentCell
+        // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = makeCell(for: tableView)
+        cell.textLabel!.text = "Level \(indexPath.row)"
+        return cell
         // Configure the cell...
 
-        let content = myWordsData[indexPath.row] as MyWordsContent
-        
-        /*
-        if let nameLabel = cell.viewWithTag(100) as? UILabel {
-            nameLabel.text = content.name
-        }
-        if let detailLabel = cell.viewWithTag(101) as? UILabel {
-            detailLabel.text = content.detail
-        }
-        if let ratingImageView = cell.viewWithTag(102) as? UIImageView {
-            ratingImageView.image = self.ratingStars(ratings: content.ratings)
-        }
-        */
-        
-        cell.content = content
-        return cell
-
+        // return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ShowList", sender: nil)
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -131,7 +106,5 @@ class MyWordsViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    
 
 }
