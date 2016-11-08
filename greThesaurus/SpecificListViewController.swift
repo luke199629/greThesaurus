@@ -8,17 +8,41 @@
 
 import UIKit
 
-class SpecificListViewController: UITableViewController {
+class SpecificListViewController: UITableViewController, AddWordViewControllerDelegate {
     var checklist: SpecificList!
-    
+    var items: [SpecificListItem]
     
     required init?(coder aDecoder: NSCoder) {
+        items = [SpecificListItem]()
+        let row0item = SpecificListItem()
+        row0item.word = "abandon"
+        row0item.expl = "being thrown away"
+        items.append(row0item)
+        
+        let row1item = SpecificListItem()
+        row1item.word = "abate"
+        row1item.expl = "to put an end to"
+        items.append(row1item)
+        
         super.init(coder: aDecoder)
         print("Documents folder is \(documentsDirectory())")
         print("Data file path is \(dataFilePath())")
     }
     
-    
+    /*
+    @IBAction func addItem() {
+        let newRowIndex = items.count
+        let item = SpecificListItem()
+        item.word = "I am a new row"
+        item.expl = "lalala"
+        items.append(item)
+        let indexPath = IndexPath(row: newRowIndex, section: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRows(at: indexPaths, with: .automatic)
+        
+        
+    }
+     */
     
     func documentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -49,24 +73,34 @@ class SpecificListViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        // return 0
+        return items.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SpecificListItem", for: indexPath)
+        
+        let item = items[indexPath.row]
+        // let label = cell.viewWithTag(1000) as! UILabel
+        // label.text = item.word
+        configureWord(for: cell, with: item)
+        
         // Configure the cell...
 
         return cell
     }
-    */
-
+    
+    func configureWord(for cell: UITableViewCell, with item: SpecificListItem) {
+        let label = cell.viewWithTag(1000) as! UILabel
+        label.text = item.word
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -75,17 +109,39 @@ class SpecificListViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        /*
         if editingStyle == .delete {
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+        }  
+         */
+        // 1
+        items.remove(at: indexPath.row)
+        
+        // 2
+        let indexPaths = [indexPath]
+        tableView.deleteRows(at: indexPaths, with: .automatic)
     }
-    */
+    
+    func addWordViewControllerdidCancel(_ controller: AddWordViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func addWordViewController(_ controller: AddWordViewController, didFinishAdding item: SpecificListItem) {
+        let newRowIndex = items.count
+        items.append(item)
+        
+        let indexPath = IndexPath(row: newRowIndex, section: 0)
+        let indexPaths = [indexPath]
+        tableView.insertRows(at: indexPaths, with: .automatic)
+        dismiss(animated: true, completion: nil)
+    }
+    
 
     /*
     // Override to support rearranging the table view.
@@ -102,14 +158,23 @@ class SpecificListViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        // 1
+        if segue.identifier == "AddWord" {
+            // 2
+            let navigationController = segue.destination as! UINavigationController
+            // 3
+            let controller = navigationController.topViewController as! AddWordViewController
+            // 4
+            controller.delegate = self
+        }
     }
-    */
+    
 
 }
