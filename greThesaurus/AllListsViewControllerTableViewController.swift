@@ -9,7 +9,33 @@
 import UIKit
 
 class AllListsViewControllerTableViewController: UITableViewController {
-
+    
+    var lists: [SpecificList]
+    
+    required init?(coder aDecoder: NSCoder) {
+        // 1
+        lists = [SpecificList]()
+        
+        // 2
+        super.init(coder: aDecoder)
+        
+        // 3
+        var list = SpecificList(name: "Level A")
+        lists.append(list)
+        
+        list = SpecificList(name: "Level B")
+        lists.append(list)
+        
+        list = SpecificList(name: "Level C")
+        lists.append(list)
+        
+        list = SpecificList(name: "Level D")
+        lists.append(list)
+        
+        list = SpecificList(name: "Level E")
+        lists.append(list)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,7 +62,7 @@ class AllListsViewControllerTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return lists.count
     }
 
     func makeCell(for tableView: UITableView) -> UITableViewCell {
@@ -51,7 +77,9 @@ class AllListsViewControllerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let cell = makeCell(for: tableView)
-        cell.textLabel!.text = "Level \(indexPath.row)"
+        let checklist = lists[indexPath.row]
+        cell.textLabel!.text = checklist.name
+        cell.accessoryType = .disclosureIndicator
         return cell
         // Configure the cell...
 
@@ -59,7 +87,8 @@ class AllListsViewControllerTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "ShowList", sender: nil)
+        let checklist = lists[indexPath.row]
+        performSegue(withIdentifier: "ShowList", sender: checklist)
     }
     
     /*
@@ -97,14 +126,18 @@ class AllListsViewControllerTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowList" {
+            let controller = segue.destination as! SpecificListViewController
+            controller.checklist = sender as! SpecificList
+        }
     }
-    */
+    
 
 }
