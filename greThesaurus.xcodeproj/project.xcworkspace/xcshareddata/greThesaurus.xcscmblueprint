@@ -1,18 +1,21 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EF7073FD87D8B365CF33F20FAD1903BFFCDC3AF0",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "dfec6421-9530-37d3-7ebd-ce57b7db7bff++505",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
     "3e1d0584-552a-4163-8473-64f7d142b303" : {
+
+    },
+    "dfec6421-9530-37d3-7ebd-ce57b7db7bff++505" : {
 
     }
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "EF7073FD87D8B365CF33F20FAD1903BFFCDC3AF0" : 9223372036854775807,
-    "3e1d0584-552a-4163-8473-64f7d142b303" : 9223372036854775807
+    "3e1d0584-552a-4163-8473-64f7d142b303" : 9223372036854775807,
+    "dfec6421-9530-37d3-7ebd-ce57b7db7bff++505" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "41EB2722-BD76-40CC-BDC3-70AFD753DB64",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "EF7073FD87D8B365CF33F20FAD1903BFFCDC3AF0" : "greThesaurus\/",
-    "3e1d0584-552a-4163-8473-64f7d142b303" : ""
+    "3e1d0584-552a-4163-8473-64f7d142b303" : "",
+    "dfec6421-9530-37d3-7ebd-ce57b7db7bff++505" : "greThesaurus\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "greThesaurus",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -26,7 +29,7 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/luke199629\/greThesaurus.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF7073FD87D8B365CF33F20FAD1903BFFCDC3AF0"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "dfec6421-9530-37d3-7ebd-ce57b7db7bff++505"
     }
   ]
 }

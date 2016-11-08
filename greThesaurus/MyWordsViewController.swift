@@ -31,6 +31,7 @@ let MyWordsContentData = [
 class MyWordsViewController: UITableViewController {
     var myWordsData: [MyWordsContent] = MyWordsContentData
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
