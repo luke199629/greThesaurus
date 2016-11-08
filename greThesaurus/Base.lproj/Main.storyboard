@@ -214,15 +214,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Words" id="9oO-ws-hVY"/>
-                    <connections>
-                        <segue destination="FGp-OD-zmx" kind="show" id="8K3-ee-MMK"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2VQ-JD-0Rt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935" y="-88"/>
+            <point key="canvasLocation" x="1097" y="-183"/>
         </scene>
-        <!--Specific List View Controller-->
+        <!--Word!-->
         <scene sceneID="JZD-B8-J8r">
             <objects>
                 <tableViewController id="FGp-OD-zmx" customClass="SpecificListViewController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
@@ -231,12 +228,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3n4-b5-vRR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SpecificListItem" id="3n4-b5-vRR">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3n4-b5-vRR" id="yKV-MU-2Da">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-2w-0JB">
+                                            <rect key="frame" x="16" y="11" width="290" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -245,10 +251,78 @@
                             <outlet property="delegate" destination="FGp-OD-zmx" id="YFy-Gb-0XB"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Word!" id="pEH-Y2-qvS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="RYb-iW-a77">
+                            <connections>
+                                <segue destination="Kjq-79-WCu" kind="presentation" identifier="AddWord" id="elo-5N-Dsu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibS-rb-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1924" y="150"/>
+            <point key="canvasLocation" x="2957.5999999999999" y="149.77511244377811"/>
+        </scene>
+        <!--Add Word-->
+        <scene sceneID="Ian-qb-bQ7">
+            <objects>
+                <tableViewController id="TI7-qP-5sU" customClass="AddWordViewController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="V7z-cg-XKA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="WBP-GX-WSa">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="H48-vO-Ef1">
+                                        <rect key="frame" x="0.0" y="35" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H48-vO-Ef1" id="RJy-N4-Db2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the unfamiliar word" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-O9-LHf">
+                                                    <rect key="frame" x="8" y="8" width="359" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="TI7-qP-5sU" eventType="editingDidEndOnExit" id="2rW-1p-HJE"/>
+                                                        <outlet property="delegate" destination="TI7-qP-5sU" id="2Gn-pV-ZAG"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="TI7-qP-5sU" id="2qm-FK-dG4"/>
+                            <outlet property="delegate" destination="TI7-qP-5sU" id="5lY-sK-gOH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Add Word" id="BCW-T4-IOa">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="xio-DH-bDk">
+                            <connections>
+                                <action selector="cancel" destination="TI7-qP-5sU" id="aaS-Yb-eIM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="cAS-zb-1YC">
+                            <connections>
+                                <action selector="done" destination="TI7-qP-5sU" id="2yH-V1-fC0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="cAS-zb-1YC" id="Odk-oA-FUD"/>
+                        <outlet property="textField" destination="F3S-O9-LHf" id="d1B-lh-pB3"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9kA-Vz-sff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5012" y="154.27286356821591"/>
         </scene>
         <!--My Words-->
         <scene sceneID="7ky-LF-cEu">
@@ -446,7 +520,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlc-85-M2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="150"/>
+            <point key="canvasLocation" x="1924" y="150"/>
         </scene>
         <!--Assessment-->
         <scene sceneID="Nc0-Yo-7Ot">
@@ -610,6 +684,24 @@
             </objects>
             <point key="canvasLocation" x="-1143" y="-183"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vau-ei-oVs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kjq-79-WCu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aka-r5-tfP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TI7-qP-5sU" kind="relationship" relationship="rootViewController" id="pgk-i7-0hQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJS-97-nDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4072.8000000000002" y="154.27286356821591"/>
+        </scene>
     </scenes>
     <resources>
         <image name="abandon" width="696" height="349"/>
@@ -618,7 +710,4 @@
         <image name="myWords" width="30" height="30"/>
         <image name="settings" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="GRL-P4-2Tp"/>
-    </inferredMetricsTieBreakers>
 </document>
