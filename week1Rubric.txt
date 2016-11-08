@@ -1,0 +1,9 @@
+Week1-Rubric
+
+Set up building environment -- Yuanyuan Zhao and Ke Lu -- 5 hours (worked together)
+User Interface flow chart design -- Yuanyuan Zhao and Ke Lu -- 2 hours (worked together)
+Build the basic structure of application on Xcode with a simple User Interface (UI) -- Yuanyuan Zhao 4 hours, Ke Lu -- 8 hours
+Find a viable lexicon that we can use and retrieve the data -- Yuanyuan Zhao -- 1 hour
+
+
+
