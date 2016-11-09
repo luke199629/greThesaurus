@@ -9,7 +9,7 @@
 import UIKit
 
 class SpecificListViewController: UITableViewController, AddWordViewControllerDelegate {
-    var checklist: SpecificList!
+    var spList: SpecificList!
     // var items: [SpecificListItem]
     
     /*
@@ -65,7 +65,7 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
  
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = checklist.name
+        title = spList.name
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -89,14 +89,14 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         // return 0
-        return checklist.items.count
+        return spList.items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpecificListItem", for: indexPath)
         
-        let item = checklist.items[indexPath.row]
+        let item = spList.items[indexPath.row]
         // let label = cell.viewWithTag(1000) as! UILabel
         // label.text = item.word
         configureWord(for: cell, with: item)
@@ -131,7 +131,7 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
         }  
          */
         // 1
-        checklist.items.remove(at: indexPath.row)
+        spList.items.remove(at: indexPath.row)
         
         // 2
         let indexPaths = [indexPath]
@@ -145,8 +145,8 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     }
     
     func addWordViewController(_ controller: AddWordViewController, didFinishAdding item: SpecificListItem) {
-        let newRowIndex = checklist.items.count
-        checklist.items.append(item)
+        let newRowIndex = spList.items.count
+        spList.items.append(item)
         
         let indexPath = IndexPath(row: newRowIndex, section: 0)
         let indexPaths = [indexPath]
@@ -194,7 +194,7 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     func saveSpecificListItems() {
         let data = NSMutableData()
         let archiver = NSKeyedArchiver(forWritingWith: data)
-        archiver.encode(checklist.items, forKey: "SpecificListItems")
+        archiver.encode(spList.items, forKey: "SpecificListItems")
         archiver.finishEncoding()
         data.write(to: dataFilePath(), atomically: true)
     }
@@ -208,7 +208,7 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
         if let data = try? Data(contentsOf: path) {
             // 3
             let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
-            checklist.items = unarchiver.decodeObject(forKey: "SpecificListItems") as! [SpecificListItem]
+            spList.items = unarchiver.decodeObject(forKey: "SpecificListItems") as! [SpecificListItem]
             unarchiver.finishDecoding()
         }
     }

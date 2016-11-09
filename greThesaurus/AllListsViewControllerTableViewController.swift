@@ -89,8 +89,8 @@ class AllListsViewControllerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         let cell = makeCell(for: tableView)
-        let checklist = lists[indexPath.row]
-        cell.textLabel!.text = checklist.name
+        let spList = lists[indexPath.row]
+        cell.textLabel!.text = spList.name
         cell.accessoryType = .disclosureIndicator
         return cell
         // Configure the cell...
@@ -99,8 +99,8 @@ class AllListsViewControllerTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let checklist = lists[indexPath.row]
-        performSegue(withIdentifier: "ShowList", sender: checklist)
+        let spList = lists[indexPath.row]
+        performSegue(withIdentifier: "ShowList", sender: spList)
     }
     
     /*
@@ -147,7 +147,7 @@ class AllListsViewControllerTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "ShowList" {
             let controller = segue.destination as! SpecificListViewController
-            controller.checklist = sender as! SpecificList
+            controller.spList = sender as! SpecificList
         }
     }
     
