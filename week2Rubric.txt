@@ -1,0 +1,6 @@
+Rubric for week 2
+Tasks completed by Ke Lu:
+1. Created the body of the familiarity-based word lists -- 5 hours
+2. Allowing users to add or delete word in a list -- 2 hours
+3. Set up an online database and stored the parsed lexicon in it -- 1 hours
+4. Refined the hierarchy of the application and independence of the lists with the use of dynamic cells and delegates -- 3 hours
