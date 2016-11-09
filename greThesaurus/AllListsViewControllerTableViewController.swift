@@ -20,6 +20,8 @@ class AllListsViewControllerTableViewController: UITableViewController {
         super.init(coder: aDecoder)
         
         // 3
+        
+        
         var list = SpecificList(name: "Level A")
         lists.append(list)
         
@@ -34,8 +36,18 @@ class AllListsViewControllerTableViewController: UITableViewController {
         
         list = SpecificList(name: "Level E")
         lists.append(list)
+        // saveSpecificList()
+        loadSpecificLists()
         
+        /*
+        for list in lists {
+            let item = SpecificListItem()
+            item.word = "Item for \(list.name)"
+            list.items.append(item)
+        }
+        */
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -138,6 +150,36 @@ class AllListsViewControllerTableViewController: UITableViewController {
             controller.checklist = sender as! SpecificList
         }
     }
+    
+    func documentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    func dataFilePath() -> URL {
+        return documentsDirectory().appendingPathComponent("greThesaurus.plist")
+    }
+
+    func saveSpecificLists() {
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWith: data)
+        archiver.encode(lists, forKey: "SpecificLists")
+        archiver.finishEncoding()
+        data.write(to: dataFilePath(), atomically: true)
+    }
+
+    func loadSpecificLists() {
+        // 1
+        let path = dataFilePath()
+        // 2
+        if let data = try? Data(contentsOf: path) {
+            // 3
+            let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+            lists = unarchiver.decodeObject(forKey: "SpecificLists") as! [SpecificList]
+            unarchiver.finishDecoding()
+        }
+    }
+
     
 
 }

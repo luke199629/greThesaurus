@@ -10,10 +10,13 @@ import UIKit
 
 class SpecificListViewController: UITableViewController, AddWordViewControllerDelegate {
     var checklist: SpecificList!
-    var items: [SpecificListItem]
+    // var items: [SpecificListItem]
     
+    /*
     required init?(coder aDecoder: NSCoder) {
-        items = [SpecificListItem]()
+        // items = [SpecificListItem]()
+
+        /*
         let row0item = SpecificListItem()
         row0item.word = "abandon"
         row0item.expl = "being thrown away"
@@ -23,11 +26,14 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
         row1item.word = "abate"
         row1item.expl = "to put an end to"
         items.append(row1item)
+        */
         
         super.init(coder: aDecoder)
-        print("Documents folder is \(documentsDirectory())")
-        print("Data file path is \(dataFilePath())")
+        loadSpecificListItems()
+        // print("Documents folder is \(documentsDirectory())")
+        // print("Data file path is \(dataFilePath())")
     }
+     */
     
     /*
     @IBAction func addItem() {
@@ -44,15 +50,19 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     }
      */
     
+    /*
     func documentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
-    
+    */
+ 
+    /*
     func dataFilePath() -> URL {
-        return documentsDirectory().appendingPathComponent("lexicon.csv")
+        return documentsDirectory().appendingPathComponent("greThesaurus.plist")
     }
-    
+    */
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = checklist.name
@@ -79,14 +89,14 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         // return 0
-        return items.count
+        return checklist.items.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpecificListItem", for: indexPath)
         
-        let item = items[indexPath.row]
+        let item = checklist.items[indexPath.row]
         // let label = cell.viewWithTag(1000) as! UILabel
         // label.text = item.word
         configureWord(for: cell, with: item)
@@ -121,11 +131,13 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
         }  
          */
         // 1
-        items.remove(at: indexPath.row)
+        checklist.items.remove(at: indexPath.row)
         
         // 2
         let indexPaths = [indexPath]
         tableView.deleteRows(at: indexPaths, with: .automatic)
+        
+        //saveSpecificListItems()
     }
     
     func addWordViewControllerdidCancel(_ controller: AddWordViewController) {
@@ -133,13 +145,15 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     }
     
     func addWordViewController(_ controller: AddWordViewController, didFinishAdding item: SpecificListItem) {
-        let newRowIndex = items.count
-        items.append(item)
+        let newRowIndex = checklist.items.count
+        checklist.items.append(item)
         
         let indexPath = IndexPath(row: newRowIndex, section: 0)
         let indexPaths = [indexPath]
         tableView.insertRows(at: indexPaths, with: .automatic)
         dismiss(animated: true, completion: nil)
+        
+        //saveSpecificListItems()
     }
     
 
@@ -175,6 +189,30 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
             controller.delegate = self
         }
     }
+    
+    /*
+    func saveSpecificListItems() {
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWith: data)
+        archiver.encode(checklist.items, forKey: "SpecificListItems")
+        archiver.finishEncoding()
+        data.write(to: dataFilePath(), atomically: true)
+    }
+    */
+    
+    /*
+    func loadSpecificListItems() {
+        // 1
+        let path = dataFilePath()
+        // 2
+        if let data = try? Data(contentsOf: path) {
+            // 3
+            let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+            checklist.items = unarchiver.decodeObject(forKey: "SpecificListItems") as! [SpecificListItem]
+            unarchiver.finishDecoding()
+        }
+    }
+    */
     
 
 }
