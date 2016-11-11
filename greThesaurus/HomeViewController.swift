@@ -18,17 +18,13 @@ struct HomeContent {
     }
 }
 
-let HomeContentData = [
-    HomeContent(name: "Word List", detail: "Keep calm and carry on")]
+let HomeContentData = [HomeContent(name: "Word List", detail: "Keep calm and carry on"), HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on")]
 
 
 class HomeViewController: UITableViewController {
     
     var homeData: [HomeContent] = HomeContentData
     
-    
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
