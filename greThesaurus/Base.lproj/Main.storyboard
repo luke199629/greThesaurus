@@ -420,6 +420,9 @@
                                 <rect key="frame" x="168" y="402" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start!"/>
+                                <connections>
+                                    <segue destination="ddL-ur-NLd" kind="show" id="2ge-dN-e8b"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -429,6 +432,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQA-nB-VnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1901.5999999999999" y="-127.28635682158921"/>
+        </scene>
+        <!--Memorizing-->
+        <scene sceneID="6A2-WV-B6i">
+            <objects>
+                <viewController id="ddL-ur-NLd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O1f-1j-HZv"/>
+                        <viewControllerLayoutGuide type="bottom" id="E7N-0y-YoR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AbT-rc-U3q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Memorizing" id="zUh-s8-gBA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bda-Fx-E6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2969" y="-345"/>
         </scene>
         <!--My Words-->
         <scene sceneID="9fP-Ux-du2">
