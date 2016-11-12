@@ -18,15 +18,18 @@ struct HomeContent {
     }
 }
 
-let HomeContentData = [HomeContent(name: "Word List", detail: "Keep calm and carry on"), HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on"),HomeContent(name: "Word List", detail: "Keep calm and carry on")]
 
 
 class HomeViewController: UITableViewController {
     
-    var homeData: [HomeContent] = HomeContentData
+    var homeData = NSArray()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        if let path = Bundle.main.path(forResource: "lexicon", ofType: "plist") {
+            homeData = NSArray(contentsOfFile: path)!
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -59,9 +62,9 @@ class HomeViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath)
 
         // Configure the cell...
-        let content = homeData[indexPath.row] as HomeContent
-        cell.textLabel?.text = content.name
-        cell.detailTextLabel?.text = content.detail
+        let content = homeData[indexPath.row] as! String
+        cell.textLabel?.text = content
+
         
         return cell
     }
