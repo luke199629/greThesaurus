@@ -46,7 +46,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5tq-Fy-1R5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-785"/>
+            <point key="canvasLocation" x="1902" y="-523"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Zk4-x3-Htc">
@@ -180,7 +180,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibS-rb-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2964" y="356"/>
+            <point key="canvasLocation" x="2726" y="933"/>
         </scene>
         <!--Add Word-->
         <scene sceneID="Ian-qb-bQ7">
@@ -241,7 +241,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kA-Vz-sff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5012" y="154.27286356821591"/>
+            <point key="canvasLocation" x="4580" y="932"/>
         </scene>
         <!--Home-->
         <scene sceneID="5ue-7G-xzB">
@@ -260,7 +260,7 @@
             </objects>
             <point key="canvasLocation" x="-127" y="-523"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="jb1-Ue-LIc">
             <objects>
                 <viewController id="d4i-ap-2jk" sceneMemberID="viewController">
@@ -272,18 +272,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-pL-6xe">
-                                <rect key="frame" x="39" y="134" width="294" height="30"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-pL-6xe">
+                                <rect key="frame" x="0.0" y="64" width="375" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Word of the Day"/>
+                                <state key="normal" backgroundImage="wordOfTheDay"/>
                                 <connections>
                                     <segue destination="Afh-as-dvO" kind="show" id="s9z-oj-ekA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
-                                <rect key="frame" x="57" y="300" width="261" height="30"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
+                                <rect key="frame" x="-1" y="248" width="375" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Select Word List"/>
+                                <state key="normal" backgroundImage="selectWordList"/>
                                 <connections>
                                     <segue destination="86G-HA-WUr" kind="show" id="A2Q-3o-Onl"/>
                                 </connections>
@@ -296,10 +296,17 @@
                                     <segue destination="pGj-cw-JFm" kind="show" id="cMA-aO-Ybk"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Word of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gta-Lg-rCO">
+                                <rect key="frame" x="-1" y="103" width="375" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="eOq-Ox-HTi"/>
+                    <navigationItem key="navigationItem" title="Home" id="aiY-xC-mZt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Aa-Rv-9k2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ixs-FA-tAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="-1496"/>
+            <point key="canvasLocation" x="1902" y="-1200"/>
         </scene>
         <!--Memorizing Progress-->
         <scene sceneID="ZF0-VG-WPo">
@@ -431,7 +438,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQA-nB-VnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1901.5999999999999" y="-127.28635682158921"/>
+            <point key="canvasLocation" x="881" y="150"/>
         </scene>
         <!--Memorizing-->
         <scene sceneID="6A2-WV-B6i">
@@ -450,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bda-Fx-E6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2969" y="-345"/>
+            <point key="canvasLocation" x="1902" y="150"/>
         </scene>
         <!--My Words-->
         <scene sceneID="9fP-Ux-du2">
@@ -472,7 +479,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlc-85-M2N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1902" y="559"/>
+            <point key="canvasLocation" x="1902" y="933"/>
         </scene>
         <!--Assessment-->
         <scene sceneID="Nc0-Yo-7Ot">
@@ -563,7 +570,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmO-ZT-9ir" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1894" y="1261"/>
+            <point key="canvasLocation" x="1902" y="1693"/>
         </scene>
         <!--Solution-->
         <scene sceneID="SDp-tc-Pm1">
@@ -582,7 +589,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEu-Si-1V2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1812" y="2029"/>
+            <point key="canvasLocation" x="881" y="1693"/>
         </scene>
         <!--Assessment-->
         <scene sceneID="HPC-5C-TkC">
@@ -654,13 +661,15 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJS-97-nDX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4072.8000000000002" y="154.27286356821591"/>
+            <point key="canvasLocation" x="3718" y="932"/>
         </scene>
     </scenes>
     <resources>
         <image name="assessment" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
         <image name="myWords" width="30" height="30"/>
+        <image name="selectWordList" width="1920" height="1080"/>
         <image name="settings" width="30" height="30"/>
+        <image name="wordOfTheDay" width="1280" height="720"/>
     </resources>
 </document>
