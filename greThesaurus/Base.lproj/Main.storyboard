@@ -154,7 +154,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3n4-b5-vRR" id="yKV-MU-2Da">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-2w-0JB">
@@ -755,9 +755,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2000" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="expl" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO0-Vp-8aO">
-                                <rect key="frame" x="55" y="182" width="305" height="103"/>
+                                <rect key="frame" x="55" y="182" width="305" height="234"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="103" id="ZkZ-8E-JME"/>
+                                    <constraint firstAttribute="height" constant="234" id="ZkZ-8E-JME"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -803,7 +803,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tev-C2-6vt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3717.5999999999999" y="1692.5037481259371"/>
+            <point key="canvasLocation" x="3717.3913043478265" y="1692.3913043478262"/>
         </scene>
     </scenes>
     <resources>
