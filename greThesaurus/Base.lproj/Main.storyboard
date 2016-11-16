@@ -154,17 +154,22 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3n4-b5-vRR" id="yKV-MU-2Da">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-2w-0JB">
-                                            <rect key="frame" x="16" y="11" width="290" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-2w-0JB">
+                                            <rect key="frame" x="29" y="0.0" width="352" height="44"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="u8h-2w-0JB" secondAttribute="trailing" id="CqW-YZ-PMA"/>
+                                        <constraint firstAttribute="bottom" secondItem="u8h-2w-0JB" secondAttribute="bottom" id="Nca-Bc-YGc"/>
+                                        <constraint firstItem="u8h-2w-0JB" firstAttribute="leading" secondItem="yKV-MU-2Da" secondAttribute="leadingMargin" constant="21" id="a5i-xv-I4Z"/>
+                                        <constraint firstItem="u8h-2w-0JB" firstAttribute="top" secondItem="yKV-MU-2Da" secondAttribute="top" id="fFE-zH-3Hu"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="Tup-Ce-jU4" kind="show" identifier="showWordSegue" id="V0a-84-Bk0"/>
@@ -186,7 +191,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibS-rb-S26" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726" y="933"/>
+            <point key="canvasLocation" x="2724.6376811594205" y="932.60869565217399"/>
         </scene>
         <!--Add Word-->
         <scene sceneID="Ian-qb-bQ7">
@@ -811,6 +816,6 @@
         <image name="wordOfTheDay" width="1280" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Psf-tw-N1A"/>
+        <segue reference="V0a-84-Bk0"/>
     </inferredMetricsTieBreakers>
 </document>
