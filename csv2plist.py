@@ -43,8 +43,8 @@ if args:
 					if(plisttype == 'array' and len(row) > 1 and warningShown == None):
 						warningShown = True
 						print 'Warning: Converting to an array only uses first column of data'
-
-					output.write('\t<string>' + row[0].strip().replace("&", "&amp;").replace("ﾠ", " ") + '</string>\n')
+					print(row[1].strip().replace("\n\n",". "))
+					output.write('\t<string>' + row[1].strip().replace("&", "&amp;").replace("ﾠ", " ") + '</string>\n')
 			
 			else:
 				print 'dict'

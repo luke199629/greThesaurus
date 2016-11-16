@@ -17,10 +17,12 @@ protocol AddWordViewControllerDelegate: class {
 class AddWordViewController: UITableViewController, UITextFieldDelegate {
     
     // var delegate: AddWordViewControllerDelegate
+    var passRating: Int!
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var doneBarButton: UIBarButtonItem!
-    
+    @IBOutlet weak var textFieldExpl: UITextField!
+
     weak var delegate: AddWordViewControllerDelegate?
     
     @IBAction func cancel() {
@@ -33,6 +35,9 @@ class AddWordViewController: UITableViewController, UITextFieldDelegate {
         // dismiss(animated: true, completion: nil)
         let item = SpecificListItem()
         item.word = textField.text!
+        item.expl = textFieldExpl.text!
+//        item.rating = Int(textFieldRate.text!)!
+        item.rating = Int(passRating)
         delegate?.addWordViewController(self, didFinishAdding:item)
     }
     

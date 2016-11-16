@@ -22,15 +22,28 @@ struct HomeContent {
 
 class HomeViewController: UITableViewController {
     
-    var homeData = NSArray()
+    var wordData = NSArray()
+    var explData = NSArray()
+    var ratingData = NSArray()
+    
+    var passWord = ""
+    var passExpl = ""
+    var passRating = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         if let path = Bundle.main.path(forResource: "lexicon", ofType: "plist") {
-            homeData = NSArray(contentsOfFile: path)!
+            wordData = NSArray(contentsOfFile: path)!
         }
-
+        if let path1 = Bundle.main.path(forResource: "expl", ofType: "plist") {
+            explData = NSArray(contentsOfFile: path1)!
+        }
+        if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
+            ratingData = NSArray(contentsOfFile: path2)!
+        }
+        print("\(wordData[0])\(explData[0])\(ratingData[0])")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -54,7 +67,7 @@ class HomeViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         // return 0
-        return homeData.count
+        return wordData.count
     }
 
     
@@ -62,15 +75,37 @@ class HomeViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContentCell", for: indexPath)
 
         // Configure the cell...
-        let content = homeData[indexPath.row] as! String
+        let idx = indexPath.row
+//        print(idx)
+        let content = wordData[idx] as! String
         cell.textLabel?.text = content
+//        passWord = wordData[idx] as! String
+//        passExpl = explData[idx] as! String
+//        passRating = Int(ratingData[idx] as! String)!
+
+        
+//        passRating = 0
 
         
         return cell
     }
     
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "showMyWords", sender: nil)
+        passWord = wordData[indexPath.row] as! String
+        passExpl = explData[indexPath.row] as! String
+        passRating = Int(ratingData[indexPath.row] as! String)!
+
+        self.performSegue(withIdentifier: "showMyWords", sender: self)
+//        self.performSegue(withIdentifier: "showMyWords", sender: passExpl)
+//        self.performSegue(withIdentifier: "showMyWords", sender: passRating)
+        
+//        let svc = showWordController
+//        svc.passWord = passWord
+//        svc.passExpl = passExpl
+//        svc.passRating = passRating
+        
+        
     }
     
     
@@ -112,14 +147,20 @@ class HomeViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "showMyWords" {
+            let svc = segue.destination as! showWordController
+            svc.passWord = passWord
+            svc.passExpl = passExpl
+            svc.passRating = passRating
+        }
     }
-    */
+    
 
 }

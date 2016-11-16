@@ -22,21 +22,21 @@ class AllListsViewControllerTableViewController: UITableViewController {
         // 3
         
         
-        var list = SpecificList(name: "Level A")
+        var list = SpecificList(name: "Level A", rate: 1)
         lists.append(list)
         
-        list = SpecificList(name: "Level B")
+        list = SpecificList(name: "Level B", rate: 2)
         lists.append(list)
         
-        list = SpecificList(name: "Level C")
+        list = SpecificList(name: "Level C", rate: 3)
         lists.append(list)
         
-        list = SpecificList(name: "Level D")
+        list = SpecificList(name: "Level D", rate: 4)
         lists.append(list)
         
-        list = SpecificList(name: "Level E")
+        list = SpecificList(name: "Level E", rate: 5)
         lists.append(list)
-        // saveSpecificList()
+//        saveSpecificLists()
         loadSpecificLists()
         
         /*
@@ -50,7 +50,7 @@ class AllListsViewControllerTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.tableView.rowHeight = 60.0
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
