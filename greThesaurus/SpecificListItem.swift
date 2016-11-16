@@ -9,19 +9,19 @@
 import Foundation
 class SpecificListItem: NSObject, NSCoding {
     var word = ""
-    //var expl = ""
-    //var rating: Int?
+    var expl = ""
+    var rating = 0
     
     func encode(with aCoder: NSCoder) {
         aCoder.encode(word, forKey: "Word")
-        //aCoder.encode(expl, forKey: "Explanation")
-        //aCoder.encode(rating, forKey: "Rating")
+        aCoder.encode(expl, forKey: "Explanation")
+        aCoder.encode(rating, forKey: "Rating")
     }
     
     required init?(coder aDecoder: NSCoder) {
         word = aDecoder.decodeObject(forKey: "Word") as! String
-        //expl = aDecoder.decodeObject(forKey: "Explanation") as! String
-        //rating = aDecoder.decodeInteger(forKey: "Rating")
+        expl = aDecoder.decodeObject(forKey: "Explanation") as! String
+        rating = aDecoder.decodeInteger(forKey: "Rating")
         super.init()
     }
     

@@ -1,0 +1,6 @@
+Rubric for week 3
+Tasks done by Ke Lu:
+Enabled user to enter word, explanation in a certain level (A to E) -- 2 hours
+Parsed both explanation and rating into plist files -- 1 hour
+Implemented function that direct user to a page showing the details when user clicks the word -- 5 hours
+Fixd the UI layout so it fits multiple screen sizes -- 1 hour

@@ -11,7 +11,9 @@ import UIKit
 class SpecificListViewController: UITableViewController, AddWordViewControllerDelegate {
     var spList: SpecificList!
     // var items: [SpecificListItem]
-    
+    var passWord = ""
+    var passExpl = ""
+    var passRating = 0
     /*
     required init?(coder aDecoder: NSCoder) {
         // items = [SpecificListItem]()
@@ -65,6 +67,7 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
  
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.rowHeight = 60.0
         title = spList.name
 
         // Uncomment the following line to preserve selection between presentations
@@ -109,6 +112,13 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
     func configureWord(for cell: UITableViewCell, with item: SpecificListItem) {
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.word
+//        label.text = "\(item.word),\(item.expl),\(item.rating)"
+        passWord = item.word
+        passExpl = item.expl
+        passRating = item.rating
+
+
+        
     }
     
     /*
@@ -185,8 +195,18 @@ class SpecificListViewController: UITableViewController, AddWordViewControllerDe
             let navigationController = segue.destination as! UINavigationController
             // 3
             let controller = navigationController.topViewController as! AddWordViewController
+            controller.passRating = spList.rate
             // 4
             controller.delegate = self
+            
+        }
+        
+        if segue.identifier == "showWordSegue" {
+            
+            let svc = segue.destination as! showWordController
+            svc.passWord = passWord
+            svc.passExpl = passExpl
+            svc.passRating = spList.rate
         }
     }
     
