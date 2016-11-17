@@ -314,7 +314,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.25" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
-                                <rect key="frame" x="0.0" y="256" width="414" height="214"/>
+                                <rect key="frame" x="0.0" y="258" width="414" height="213"/>
                                 <state key="normal" backgroundImage="selectWordList"/>
                                 <connections>
                                     <segue destination="86G-HA-WUr" kind="show" id="A2Q-3o-Onl"/>
