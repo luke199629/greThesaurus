@@ -13,7 +13,7 @@
         <!--Select Word-->
         <scene sceneID="wJJ-S6-Pzc">
             <objects>
-                <tableViewController id="86G-HA-WUr" customClass="HomeViewController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="86G-HA-WUr" customClass="SelectWordViewController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="6tC-BX-gUQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
@@ -294,7 +294,7 @@
         <!--Home-->
         <scene sceneID="jb1-Ue-LIc">
             <objects>
-                <viewController id="d4i-ap-2jk" sceneMemberID="viewController">
+                <viewController id="d4i-ap-2jk" customClass="HomeViewController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g2c-kU-eKN"/>
                         <viewControllerLayoutGuide type="bottom" id="gGC-Uw-Qj6"/>
@@ -303,41 +303,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-pL-6xe">
-                                <rect key="frame" x="0.0" y="64" width="414" height="176"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-pL-6xe">
+                                <rect key="frame" x="0.0" y="64" width="414" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="176" id="GtZ-3x-cJD"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="wordOfTheDay"/>
                                 <connections>
-                                    <segue destination="Afh-as-dvO" kind="show" id="s9z-oj-ekA"/>
+                                    <action selector="didClickWordofDay:" destination="d4i-ap-2jk" eventType="touchUpInside" id="tO1-1v-lyY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
-                                <rect key="frame" x="0.0" y="238" width="414" height="191"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
+                                <rect key="frame" x="0.0" y="256" width="414" height="214"/>
                                 <state key="normal" backgroundImage="selectWordList"/>
                                 <connections>
                                     <segue destination="86G-HA-WUr" kind="show" id="A2Q-3o-Onl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as3-jp-gEy">
-                                <rect key="frame" x="0.0" y="426" width="414" height="261"/>
+                            <button opaque="NO" alpha="0.25" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as3-jp-gEy">
+                                <rect key="frame" x="0.0" y="472" width="414" height="215"/>
                                 <state key="normal" backgroundImage="startMemorizing"/>
                                 <connections>
                                     <segue destination="pGj-cw-JFm" kind="show" id="cMA-aO-Ybk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gta-Lg-rCO">
-                                <rect key="frame" x="0.0" y="64" width="414" height="174"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="174" id="1Ky-lf-btE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2Z-SE-HNZ">
-                                <rect key="frame" x="0.0" y="240" width="414" height="186"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Word List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2Z-SE-HNZ">
+                                <rect key="frame" x="0.0" y="270" width="414" height="186"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="186" id="wmv-om-rGw"/>
                                 </constraints>
@@ -345,10 +336,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Memorizing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-lK-MNO">
-                                <rect key="frame" x="0.0" y="478" width="414" height="157"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Start Memorizing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-lK-MNO">
+                                <rect key="frame" x="0.0" y="501" width="414" height="157"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="157" id="t5X-Pl-KNH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Word of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gta-Lg-rCO">
+                                <rect key="frame" x="0.0" y="72" width="414" height="174"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="174" id="1Ky-lf-btE"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
@@ -460,25 +460,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="znE-Sm-cAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="881" y="-1200"/>
-        </scene>
-        <!--Word of the Day-->
-        <scene sceneID="1up-bs-cLB">
-            <objects>
-                <viewController id="Afh-as-dvO" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="c2A-iG-xxp"/>
-                        <viewControllerLayoutGuide type="bottom" id="0uv-Ym-51i"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="OVC-Zf-RKe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Word of the Day" id="dmh-hV-moc"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ixs-FA-tAA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1902" y="-1200"/>
         </scene>
         <!--Memorizing Progress-->
         <scene sceneID="ZF0-VG-WPo">
@@ -739,7 +720,7 @@
         <!--Show Word Controller-->
         <scene sceneID="9eg-Rv-tT8">
             <objects>
-                <viewController id="Tup-Ce-jU4" customClass="showWordController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wordViewController" id="Tup-Ce-jU4" customClass="showWordController" customModule="greThesaurus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HAD-tf-ecg"/>
                         <viewControllerLayoutGuide type="bottom" id="JhA-JR-DoU"/>
@@ -816,6 +797,6 @@
         <image name="wordOfTheDay" width="1280" height="720"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V0a-84-Bk0"/>
+        <segue reference="Psf-tw-N1A"/>
     </inferredMetricsTieBreakers>
 </document>

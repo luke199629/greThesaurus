@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23604FE71DDD59DA0061D1A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */; };
+		23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE81DDD5EE00061D1A8 /* Extensions.swift */; };
 		23D0BE3B1DD685E7003DAA8E /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D0BE3A1DD685E7003DAA8E /* lexicon.plist */; };
 		A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */; };
 		A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B71DD19E81002BD5C2 /* SpecificList.swift */; };
 		A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */; };
 		A38588BE1DD1D13A002BD5C2 /* SpecificListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BD1DD1D13A002BD5C2 /* SpecificListItem.swift */; };
 		A38588C01DD1E460002BD5C2 /* AddWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BF1DD1E460002BD5C2 /* AddWordViewController.swift */; };
-		A39725E21DC9C363009D3828 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E11DC9C363009D3828 /* HomeViewController.swift */; };
+		A39725E21DC9C363009D3828 /* SelectWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E11DC9C363009D3828 /* SelectWordViewController.swift */; };
 		A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E31DC9D134009D3828 /* MyWordsViewController.swift */; };
 		A39725E61DC9DD73009D3828 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E51DC9DD73009D3828 /* ContentCell.swift */; };
 		A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		23604FE81DDD5EE00061D1A8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		23D0BE3A1DD685E7003DAA8E /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = lexicon.plist; sourceTree = "<group>"; };
 		A309505F1DCA929A008C4543 /* lexicon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = lexicon.csv; sourceTree = "<group>"; };
 		A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewControllerTableViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +60,7 @@
 		A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificListViewController.swift; sourceTree = "<group>"; };
 		A38588BD1DD1D13A002BD5C2 /* SpecificListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificListItem.swift; sourceTree = "<group>"; };
 		A38588BF1DD1E460002BD5C2 /* AddWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddWordViewController.swift; sourceTree = "<group>"; };
-		A39725E11DC9C363009D3828 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A39725E11DC9C363009D3828 /* SelectWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectWordViewController.swift; sourceTree = "<group>"; };
 		A39725E31DC9D134009D3828 /* MyWordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyWordsViewController.swift; sourceTree = "<group>"; };
 		A39725E51DC9DD73009D3828 /* ContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
 		A39725E91DC9E2CE009D3828 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -136,8 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */,
+				23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */,
 				A38588BD1DD1D13A002BD5C2 /* SpecificListItem.swift */,
-				A39725E11DC9C363009D3828 /* HomeViewController.swift */,
+				A39725E11DC9C363009D3828 /* SelectWordViewController.swift */,
 				A39E3AA11DC6D21A00358049 /* AppDelegate.swift */,
 				A39E3AA71DC6D21A00358049 /* Main.storyboard */,
 				A3F4284B1DDB84C6005B792E /* showWordController.swift */,
@@ -152,6 +157,7 @@
 				A39E3AAF1DC6D21A00358049 /* Info.plist */,
 				A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */,
 				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
+				23604FE81DDD5EE00061D1A8 /* Extensions.swift */,
 			);
 			path = greThesaurus;
 			sourceTree = "<group>";
@@ -318,12 +324,14 @@
 				A38588C01DD1E460002BD5C2 /* AddWordViewController.swift in Sources */,
 				A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */,
 				A3F4284C1DDB84C6005B792E /* showWordController.swift in Sources */,
+				23604FE71DDD59DA0061D1A8 /* HomeViewController.swift in Sources */,
 				A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */,
 				A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */,
 				A39725EC1DC9E483009D3828 /* SettingsContentCell.swift in Sources */,
 				A39725E61DC9DD73009D3828 /* ContentCell.swift in Sources */,
+				23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */,
 				A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */,
-				A39725E21DC9C363009D3828 /* HomeViewController.swift in Sources */,
+				A39725E21DC9C363009D3828 /* SelectWordViewController.swift in Sources */,
 				A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */,
 				A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */,
 			);
