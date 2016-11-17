@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		23604FE71DDD59DA0061D1A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */; };
 		23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE81DDD5EE00061D1A8 /* Extensions.swift */; };
+		2368DE501DDD9989000AC8F1 /* Pacifico.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */; };
 		23D0BE3B1DD685E7003DAA8E /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D0BE3A1DD685E7003DAA8E /* lexicon.plist */; };
 		A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */; };
 		A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B71DD19E81002BD5C2 /* SpecificList.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		23604FE81DDD5EE00061D1A8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.otf; sourceTree = "<group>"; };
 		23D0BE3A1DD685E7003DAA8E /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = lexicon.plist; sourceTree = "<group>"; };
 		A309505F1DCA929A008C4543 /* lexicon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = lexicon.csv; sourceTree = "<group>"; };
 		A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewControllerTableViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				A3F4284D1DDBE970005B792E /* expl.plist */,
 				A3F4284F1DDBE978005B792E /* ratings.plist */,
 				A39725ED1DC9EC3D009D3828 /* ref.txt */,
+				2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */,
 				A3B625681DC967A8003CF4F7 /* custom_icons */,
 				A39E3AA01DC6D21A00358049 /* greThesaurus */,
 				A39E3AB71DC6D21A00358049 /* greThesaurusTests */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F428501DDBE978005B792E /* ratings.plist in Resources */,
+				2368DE501DDD9989000AC8F1 /* Pacifico.otf in Resources */,
 				A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */,
 				A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */,
 				A3B625691DC967A8003CF4F7 /* custom_icons in Resources */,

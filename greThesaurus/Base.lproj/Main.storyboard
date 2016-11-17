@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Pacifico.otf">
+            <string>Pacifico</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Select Word-->
         <scene sceneID="wJJ-S6-Pzc">
@@ -56,7 +61,7 @@
             <objects>
                 <navigationController id="Jud-Hs-W26" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Esx-tz-GgH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SaY-XR-OUJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SaY-XR-OUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -81,7 +86,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7OO-ve-NRE" id="vgM-Gb-XF6">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="59"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cOs-uB-vQQ">
@@ -154,7 +159,7 @@
                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3n4-b5-vRR" id="yKV-MU-2Da">
-                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="381" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1000" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8h-2w-0JB">
@@ -208,7 +213,7 @@
                                         <rect key="frame" x="0.0" y="35" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H48-vO-Ef1" id="RJy-N4-Db2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter the unfamiliar word" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-O9-LHf">
@@ -228,7 +233,7 @@
                                         <rect key="frame" x="0.0" y="79" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2eg-n8-i9f" id="aAg-MZ-dQx">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter explanation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VWm-tz-9zo">
@@ -279,7 +284,7 @@
             <objects>
                 <navigationController id="f0M-lj-Wsi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="6ty-bF-1as"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hTB-fV-b5B">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hTB-fV-b5B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -304,21 +309,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2r-pL-6xe">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="230.66666666666666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="229.66666666666666"/>
                                 <state key="normal" backgroundImage="wordOfTheDay"/>
                                 <connections>
                                     <action selector="didClickWordofDay:" destination="d4i-ap-2jk" eventType="touchUpInside" id="tO1-1v-lyY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQL-xj-PM2">
-                                <rect key="frame" x="0.0" y="228.66666666666669" width="414" height="228.00000000000006"/>
+                                <rect key="frame" x="0.0" y="229.66666666666669" width="414" height="227.00000000000006"/>
                                 <state key="normal" backgroundImage="selectWordList"/>
                                 <connections>
                                     <segue destination="86G-HA-WUr" kind="show" id="A2Q-3o-Onl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="as3-jp-gEy">
-                                <rect key="frame" x="0.0" y="457.66666666666674" width="414" height="229.33333333333326"/>
+                                <rect key="frame" x="0.0" y="455.66666666666674" width="414" height="231.33333333333326"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" backgroundImage="startMemorizing">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -328,9 +333,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word of the Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gta-Lg-rCO">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="230.66666666666666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="229.66666666666666"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Pacifico" family="Pacifico" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -346,9 +351,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Word List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2Z-SE-HNZ">
-                                <rect key="frame" x="0.0" y="228.66666666666669" width="414" height="228.00000000000006"/>
+                                <rect key="frame" x="0.0" y="229.66666666666669" width="414" height="227.00000000000006"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Pacifico" family="Pacifico" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -364,9 +369,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Memorizing!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4d-lK-MNO">
-                                <rect key="frame" x="1" y="456" width="414" height="280"/>
+                                <rect key="frame" x="0.0" y="456" width="415" height="280"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Pacifico" family="Pacifico" pointSize="37"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -386,25 +391,25 @@
                         <constraints>
                             <constraint firstItem="gta-Lg-rCO" firstAttribute="leading" secondItem="Hq3-Qb-1vV" secondAttribute="leading" id="1Ph-P1-Nhd"/>
                             <constraint firstItem="as3-jp-gEy" firstAttribute="bottom" secondItem="gGC-Uw-Qj6" secondAttribute="top" id="2L8-66-KSr"/>
-                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="as3-jp-gEy" secondAttribute="top" constant="-1" id="5OR-P7-TaA"/>
+                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="as3-jp-gEy" secondAttribute="top" id="5OR-P7-TaA"/>
                             <constraint firstItem="g2Z-SE-HNZ" firstAttribute="leading" secondItem="Hq3-Qb-1vV" secondAttribute="leading" id="8bO-RL-AD5"/>
                             <constraint firstItem="gta-Lg-rCO" firstAttribute="height" secondItem="g2Z-SE-HNZ" secondAttribute="height" constant="3" id="FIS-rY-HnB"/>
                             <constraint firstItem="VQL-xj-PM2" firstAttribute="top" secondItem="g2Z-SE-HNZ" secondAttribute="top" id="Git-TW-9ql"/>
                             <constraint firstAttribute="trailing" secondItem="gta-Lg-rCO" secondAttribute="trailing" id="Ikx-VZ-hYX"/>
-                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="g2Z-SE-HNZ" secondAttribute="bottom" id="IxE-ua-QHU"/>
+                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="g2Z-SE-HNZ" secondAttribute="bottom" constant="-1" id="IxE-ua-QHU"/>
                             <constraint firstItem="gta-Lg-rCO" firstAttribute="top" secondItem="Hq3-Qb-1vV" secondAttribute="top" id="KtI-Et-WQh"/>
-                            <constraint firstItem="g2Z-SE-HNZ" firstAttribute="height" secondItem="z4d-lK-MNO" secondAttribute="height" constant="-51.999999999999943" id="TGD-3G-4nC"/>
+                            <constraint firstItem="g2Z-SE-HNZ" firstAttribute="height" secondItem="z4d-lK-MNO" secondAttribute="height" constant="-53.333333333333371" id="TGD-3G-4nC"/>
                             <constraint firstItem="VQL-xj-PM2" firstAttribute="leading" secondItem="as3-jp-gEy" secondAttribute="leading" id="UD0-2Z-MIR"/>
                             <constraint firstItem="gGC-Uw-Qj6" firstAttribute="top" secondItem="z4d-lK-MNO" secondAttribute="bottom" constant="-49" id="VLk-mh-oxn"/>
                             <constraint firstItem="VQL-xj-PM2" firstAttribute="bottom" secondItem="g2Z-SE-HNZ" secondAttribute="bottom" id="WUK-Lo-Yyd"/>
                             <constraint firstItem="z4d-lK-MNO" firstAttribute="trailing" secondItem="as3-jp-gEy" secondAttribute="trailing" constant="1" id="ZYa-fo-7Ea"/>
                             <constraint firstAttribute="trailing" secondItem="g2Z-SE-HNZ" secondAttribute="trailing" id="bBi-CI-PFR"/>
-                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="g2Z-SE-HNZ" secondAttribute="bottom" id="bVc-mV-mgm"/>
+                            <constraint firstItem="z4d-lK-MNO" firstAttribute="top" secondItem="g2Z-SE-HNZ" secondAttribute="bottom" constant="-1" id="bVc-mV-mgm"/>
                             <constraint firstItem="T2r-pL-6xe" firstAttribute="bottom" secondItem="gta-Lg-rCO" secondAttribute="bottom" id="bWQ-4q-BQy"/>
-                            <constraint firstItem="g2Z-SE-HNZ" firstAttribute="top" secondItem="gta-Lg-rCO" secondAttribute="bottom" constant="-2" id="fGg-Pk-DzZ"/>
+                            <constraint firstItem="g2Z-SE-HNZ" firstAttribute="top" secondItem="gta-Lg-rCO" secondAttribute="bottom" id="fGg-Pk-DzZ"/>
                             <constraint firstItem="T2r-pL-6xe" firstAttribute="leading" secondItem="gta-Lg-rCO" secondAttribute="leading" id="fU2-Dt-boR"/>
                             <constraint firstItem="T2r-pL-6xe" firstAttribute="trailing" secondItem="gta-Lg-rCO" secondAttribute="trailing" id="huH-OI-Yop"/>
-                            <constraint firstItem="as3-jp-gEy" firstAttribute="leading" secondItem="z4d-lK-MNO" secondAttribute="leading" constant="-1" id="lGK-Z5-JXk"/>
+                            <constraint firstItem="as3-jp-gEy" firstAttribute="leading" secondItem="z4d-lK-MNO" secondAttribute="leading" id="lGK-Z5-JXk"/>
                             <constraint firstItem="VQL-xj-PM2" firstAttribute="leading" secondItem="g2Z-SE-HNZ" secondAttribute="leading" id="oNa-Vr-zTf"/>
                             <constraint firstItem="VQL-xj-PM2" firstAttribute="trailing" secondItem="z4d-lK-MNO" secondAttribute="trailing" constant="-1" id="pgh-qb-j8o"/>
                             <constraint firstItem="T2r-pL-6xe" firstAttribute="top" secondItem="gta-Lg-rCO" secondAttribute="top" id="uaI-3d-gVc"/>
@@ -436,7 +441,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="esm-iQ-VBg" id="k76-Ef-1N7">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ol-6j-1Xs">
@@ -686,7 +691,7 @@
             <objects>
                 <navigationController id="qeM-SZ-Wkf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Assessment" image="assessment" id="WWr-oC-1O2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbf-ek-c7C">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbf-ek-c7C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -703,7 +708,7 @@
             <objects>
                 <navigationController id="i9G-XM-O00" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Words" image="myWords" id="3Fe-e6-CvI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XzK-IC-Iog">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XzK-IC-Iog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -741,7 +746,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kjq-79-WCu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aka-r5-tfP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Aka-r5-tfP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
