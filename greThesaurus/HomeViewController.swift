@@ -25,7 +25,9 @@ class HomeViewController: UIViewController {
         if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
             ratingData = NSArray(contentsOfFile: path2)!
         }
-        
+
+        self.navigationController?.navigationBar.barStyle = .blackTranslucent
+        self.navigationController?.tabBarController?.tabBar.tintColor = .white
         
     }
     
