@@ -64,6 +64,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SaY-XR-OUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="jxq-DL-ULb" kind="relationship" relationship="rootViewController" id="Jz5-y4-yZs"/>
@@ -287,6 +288,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hTB-fV-b5B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="d4i-ap-2jk" kind="relationship" relationship="rootViewController" id="eld-4w-bSy"/>
@@ -434,6 +436,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection id="dMm-b4-g3C">
                                 <cells>
@@ -453,8 +456,10 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="stN-YN-BQY">
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stN-YN-BQY">
                                                             <rect key="frame" x="309" y="6.6666666666666643" width="51" height="31"/>
+                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="onTintColor" red="0.0089661593264248607" green="0.0089661593264248607" blue="0.0089661593264248607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </switch>
                                                     </subviews>
                                                 </stackView>
@@ -517,11 +522,14 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="53a-W3-PCp">
                                 <rect key="frame" x="112" y="250" width="150" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0089661593259999992" green="0.0089661593259999992" blue="0.0089661593259999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOe-GK-l0t">
                                 <rect key="frame" x="168" y="402" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start!"/>
+                                <state key="normal" title="Start!">
+                                    <color key="titleColor" red="0.0089661593259999992" green="0.0089661593259999992" blue="0.0089661593259999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="ddL-ur-NLd" kind="show" id="2ge-dN-e8b"/>
                                 </connections>
@@ -602,6 +610,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="tintColor" red="0.0089661593259999992" green="0.0089661593259999992" blue="0.0089661593259999992" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="2sh-Fj-Ded" kind="show" id="LjT-04-sWe"/>
@@ -694,6 +703,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbf-ek-c7C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Eb8-gl-P7N" kind="relationship" relationship="rootViewController" id="Cq9-BQ-QEr"/>
@@ -711,6 +721,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XzK-IC-Iog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="yCb-0x-Msa" kind="relationship" relationship="rootViewController" id="Hae-FZ-wvB"/>
