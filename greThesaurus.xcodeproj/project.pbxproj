@@ -10,7 +10,9 @@
 		23604FE71DDD59DA0061D1A8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */; };
 		23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23604FE81DDD5EE00061D1A8 /* Extensions.swift */; };
 		2368DE501DDD9989000AC8F1 /* Pacifico.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */; };
-		23D0BE3B1DD685E7003DAA8E /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23D0BE3A1DD685E7003DAA8E /* lexicon.plist */; };
+		23FE19D41DDDB03B00E94D02 /* expl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D11DDDB03B00E94D02 /* expl.plist */; };
+		23FE19D51DDDB03B00E94D02 /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D21DDDB03B00E94D02 /* lexicon.plist */; };
+		23FE19D61DDDB03B00E94D02 /* ratings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D31DDDB03B00E94D02 /* ratings.plist */; };
 		A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */; };
 		A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B71DD19E81002BD5C2 /* SpecificList.swift */; };
 		A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */; };
@@ -29,8 +31,6 @@
 		A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */; };
 		A3B625691DC967A8003CF4F7 /* custom_icons in Resources */ = {isa = PBXBuildFile; fileRef = A3B625681DC967A8003CF4F7 /* custom_icons */; };
 		A3F4284C1DDB84C6005B792E /* showWordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4284B1DDB84C6005B792E /* showWordController.swift */; };
-		A3F4284E1DDBE970005B792E /* expl.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3F4284D1DDBE970005B792E /* expl.plist */; };
-		A3F428501DDBE978005B792E /* ratings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3F4284F1DDBE978005B792E /* ratings.plist */; };
 		A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +55,9 @@
 		23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		23604FE81DDD5EE00061D1A8 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.otf; sourceTree = "<group>"; };
-		23D0BE3A1DD685E7003DAA8E /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = lexicon.plist; sourceTree = "<group>"; };
-		A309505F1DCA929A008C4543 /* lexicon.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = lexicon.csv; sourceTree = "<group>"; };
+		23FE19D11DDDB03B00E94D02 /* expl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = expl.plist; path = lexicon/expl.plist; sourceTree = "<group>"; };
+		23FE19D21DDDB03B00E94D02 /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = lexicon.plist; path = lexicon/lexicon.plist; sourceTree = "<group>"; };
+		23FE19D31DDDB03B00E94D02 /* ratings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ratings.plist; path = lexicon/ratings.plist; sourceTree = "<group>"; };
 		A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		A38588B71DD19E81002BD5C2 /* SpecificList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificList.swift; sourceTree = "<group>"; };
 		A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificListViewController.swift; sourceTree = "<group>"; };
@@ -82,8 +83,6 @@
 		A39E3AC51DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B625681DC967A8003CF4F7 /* custom_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = custom_icons; sourceTree = "<group>"; };
 		A3F4284B1DDB84C6005B792E /* showWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showWordController.swift; sourceTree = "<group>"; };
-		A3F4284D1DDBE970005B792E /* expl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = expl.plist; sourceTree = "<group>"; };
-		A3F4284F1DDBE978005B792E /* ratings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ratings.plist; sourceTree = "<group>"; };
 		A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,10 +114,9 @@
 		A39E3A951DC6D21A00358049 = {
 			isa = PBXGroup;
 			children = (
-				A309505F1DCA929A008C4543 /* lexicon.csv */,
-				23D0BE3A1DD685E7003DAA8E /* lexicon.plist */,
-				A3F4284D1DDBE970005B792E /* expl.plist */,
-				A3F4284F1DDBE978005B792E /* ratings.plist */,
+				23FE19D11DDDB03B00E94D02 /* expl.plist */,
+				23FE19D21DDDB03B00E94D02 /* lexicon.plist */,
+				23FE19D31DDDB03B00E94D02 /* ratings.plist */,
 				A39725ED1DC9EC3D009D3828 /* ref.txt */,
 				2368DE4F1DDD98BC000AC8F1 /* Pacifico.otf */,
 				A3B625681DC967A8003CF4F7 /* custom_icons */,
@@ -291,14 +289,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3F428501DDBE978005B792E /* ratings.plist in Resources */,
 				2368DE501DDD9989000AC8F1 /* Pacifico.otf in Resources */,
 				A39E3AAE1DC6D21A00358049 /* LaunchScreen.storyboard in Resources */,
 				A39E3AAB1DC6D21A00358049 /* Assets.xcassets in Resources */,
 				A3B625691DC967A8003CF4F7 /* custom_icons in Resources */,
-				23D0BE3B1DD685E7003DAA8E /* lexicon.plist in Resources */,
 				A39E3AA91DC6D21A00358049 /* Main.storyboard in Resources */,
-				A3F4284E1DDBE970005B792E /* expl.plist in Resources */,
+				23FE19D41DDDB03B00E94D02 /* expl.plist in Resources */,
+				23FE19D51DDDB03B00E94D02 /* lexicon.plist in Resources */,
+				23FE19D61DDDB03B00E94D02 /* ratings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
