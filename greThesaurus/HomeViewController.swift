@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     let wordControllerId = "wordViewController"
     var wordData:NSArray!
     var explData:NSArray!
+    @IBOutlet weak var wordOfTheDayLabel: UILabel!
     var ratingData:NSArray!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,7 @@ class HomeViewController: UIViewController {
         if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
             ratingData = NSArray(contentsOfFile: path2)!
         }
+        
         
     }
     
