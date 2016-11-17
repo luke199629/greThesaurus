@@ -24,6 +24,17 @@ class SettingsViewController: UITableViewController {
 
     var settingsData: [SettingsContent] = SettingsContentData
     
+    @IBAction func nightModeSwitchValueDidChange(_ sender: Any) {
+        UINavigationBar.appearance().barTintColor = .black
+        let window = (UIApplication.shared.delegate as! AppDelegate).window
+        
+        
+        for subview in (window?.subviews ?? []) {
+            subview.removeFromSuperview()
+            window?.addSubview(subview)
+            
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
