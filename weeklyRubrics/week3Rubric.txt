@@ -1,12 +1,16 @@
 Rubric for week 3
 
 Tasks done by Ke Lu:
+
 Enabled user to enter word, explanation in a certain level (A to E) -- 2 hours
 Parsed both explanation and rating into plist files -- 1 hour
 Implemented function that direct user to a page showing the details when user clicks the word -- 5 hours
 Fixd the UI layout so it fits multiple screen sizes -- 1 hour
 
 Tasks done by Yuanyuan Zhao:
-UI design -- 7 hours
-Word of the Day -- 1 hour
-Icon Design -- 1 hour
+
+UI designing and changing styles -- 7 hours
+Word of the Day, which randomly displays one of the word and explanation page -- 1 hour
+Icon Design and making-- 1 hour
+Memorizing progress tracking module -- 
+Searched for usable practice test and solution -- 1 hour
