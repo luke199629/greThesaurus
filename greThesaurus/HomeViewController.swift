@@ -8,12 +8,15 @@
 
 import Foundation
 import UIKit
+
+var wordData:NSArray!
+var explData:NSArray!
+var ratingData:NSArray!
+
 class HomeViewController: UIViewController {
     let wordControllerId = "wordViewController"
-    var wordData:NSArray!
-    var explData:NSArray!
-    @IBOutlet weak var wordOfTheDayLabel: UILabel!
-    var ratingData:NSArray!
+        @IBOutlet weak var wordOfTheDayLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let path = Bundle.main.path(forResource: "lexicon", ofType: "plist") {
@@ -46,4 +49,5 @@ class HomeViewController: UIViewController {
         controller.passRating = Int(ratingData[randIndex] as! String)
         self.navigationController?.pushViewController(controller, animated: true)
     }
+    
 }

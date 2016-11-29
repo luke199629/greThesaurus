@@ -30,6 +30,7 @@
 		A39E3AB91DC6D21A00358049 /* greThesaurusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AB81DC6D21A00358049 /* greThesaurusTests.swift */; };
 		A39E3AC41DC6D21A00358049 /* greThesaurusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */; };
 		A3B625691DC967A8003CF4F7 /* custom_icons in Resources */ = {isa = PBXBuildFile; fileRef = A3B625681DC967A8003CF4F7 /* custom_icons */; };
+		A3C8E2331DED3F2900A71572 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C8E2321DED3F2900A71572 /* ProgressViewController.swift */; };
 		A3F4284C1DDB84C6005B792E /* showWordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F4284B1DDB84C6005B792E /* showWordController.swift */; };
 		A3FCCE5C1DC836DA00D1E447 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
@@ -82,6 +83,7 @@
 		A39E3AC31DC6D21A00358049 /* greThesaurusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = greThesaurusUITests.swift; sourceTree = "<group>"; };
 		A39E3AC51DC6D21A00358049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3B625681DC967A8003CF4F7 /* custom_icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = custom_icons; sourceTree = "<group>"; };
+		A3C8E2321DED3F2900A71572 /* ProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		A3F4284B1DDB84C6005B792E /* showWordController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showWordController.swift; sourceTree = "<group>"; };
 		A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */,
+				A3C8E2321DED3F2900A71572 /* ProgressViewController.swift */,
 				23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */,
 				A38588BD1DD1D13A002BD5C2 /* SpecificListItem.swift */,
 				A39725E11DC9C363009D3828 /* SelectWordViewController.swift */,
@@ -332,6 +335,7 @@
 				A39725EC1DC9E483009D3828 /* SettingsContentCell.swift in Sources */,
 				A39725E61DC9DD73009D3828 /* ContentCell.swift in Sources */,
 				23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */,
+				A3C8E2331DED3F2900A71572 /* ProgressViewController.swift in Sources */,
 				A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */,
 				A39725E21DC9C363009D3828 /* SelectWordViewController.swift in Sources */,
 				A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */,
