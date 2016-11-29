@@ -1,0 +1,4 @@
+Rubric for Week 4
+Tasks done by Ke Lu:
+Progress bar dynamic percentage based on familiarity ratings
+added Memorizing functionality that gets the first word that has no rating for the user to learn
