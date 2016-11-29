@@ -27,7 +27,7 @@ class ProgressViewController: UIViewController {
            
         }
         progress = progress / Float(ratingData.count)
-        progressLabel.text = "\(progress*100) %"
+        progressLabel.text = String(format: "%.2f %%", progress*100)
         progressBar.setProgress(progress, animated: true)
     }
 
