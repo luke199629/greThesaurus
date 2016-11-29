@@ -39,15 +39,33 @@ class ProgressViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "startMemorizing" {
+            let svc = segue.destination as! showWordController
+            var idx = ratingData.index(of: "0")
+            if idx < 10000000 { //there isn't that many english words so it's safe to hard code
+                print(idx)
+                svc.passWord = wordData.object(at: idx) as! String
+                svc.passExpl = explData.object(at: idx) as! String
+                svc.passRating = 0
+            } else {
+                idx = -1
+                print("nil")
+                svc.passWord = "The end"
+                svc.passExpl = ""
+                svc.passRating = 0
+            }
+            
+     
+        }
     }
-    */
+    
     
     /*
     var counter:Int = 0 {
