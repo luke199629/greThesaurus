@@ -17,6 +17,18 @@ class showWordController: UIViewController {
     @IBOutlet weak var word: UILabel!
     @IBOutlet weak var rating: UILabel!
     @IBOutlet weak var expl: UILabel!
+
+    @IBAction func operate(_ sender: UIButton) {
+        let operation: Int! = Int(sender.currentTitle!)
+        print(operation)
+        let idx = wordData.index(of: passWord)
+        print(idx)
+        ratingData[idx] = String(operation)
+        let path2:String! = Bundle.main.path(forResource: "ratings", ofType: "plist")
+        ratingData.write(toFile: path2, atomically: true)
+    }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -94,6 +94,7 @@ class SelectWordViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         passWord = wordData[indexPath.row] as! String
         passExpl = explData[indexPath.row] as! String
+        print(ratingData[indexPath.row])
         passRating = Int(ratingData[indexPath.row] as! String)!
 
         self.performSegue(withIdentifier: "showMyWords", sender: self)

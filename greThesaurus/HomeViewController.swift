@@ -11,7 +11,7 @@ import UIKit
 
 var wordData:NSArray!
 var explData:NSArray!
-var ratingData:NSArray!
+var ratingData:NSMutableArray!
 
 class HomeViewController: UIViewController {
     let wordControllerId = "wordViewController"
@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
             explData = NSArray(contentsOfFile: path1)!
         }
         if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
-            ratingData = NSArray(contentsOfFile: path2)!
+            ratingData = NSMutableArray(contentsOfFile: path2)!
         }
 
         self.navigationController?.navigationBar.barStyle = .blackTranslucent
