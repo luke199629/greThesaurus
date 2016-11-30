@@ -26,6 +26,7 @@ class showWordController: UIViewController {
         ratingData[idx] = String(operation)
         let path2:String! = Bundle.main.path(forResource: "ratings", ofType: "plist")
         ratingData.write(toFile: path2, atomically: true)
+        rating.text = String(operation)
     }
 
 

@@ -29,6 +29,7 @@ class ProgressViewController: UIViewController {
         progress = progress / Float(ratingData.count)
         progressLabel.text = String(format: "%.2f %%", progress*100)
         progressBar.setProgress(progress, animated: true)
+        
     }
 
     
@@ -78,6 +79,19 @@ class ProgressViewController: UIViewController {
         }
     }
      */
+    
+    override func viewWillAppear(_ animated: Bool) {
+        var progress: Float = 0.0
+        for i in 0 ..< ratingData.count {
+            if (ratingData[i] as! NSString).intValue != 0 {
+                progress += 1
+            }
+            
+        }
+        progress = progress / Float(ratingData.count)
+        progressLabel.text = String(format: "%.2f %%", progress*100)
+        progressBar.setProgress(progress, animated: true)
+    }
    
 
 }
