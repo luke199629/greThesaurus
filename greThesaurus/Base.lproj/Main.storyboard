@@ -63,7 +63,7 @@
             <objects>
                 <navigationController id="Jud-Hs-W26" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" id="Esx-tz-GgH"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="SaY-XR-OUJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SaY-XR-OUJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,7 +96,7 @@
                                             <rect key="frame" x="28" y="8" width="325" height="43"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="9hx-0c-Rbq">
-                                                    <rect key="frame" x="0.0" y="0.6666666666666643" width="53" height="42"/>
+                                                    <rect key="frame" x="0.0" y="1" width="53" height="42"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oI-MC-5JF">
                                                             <rect key="frame" x="0.0" y="0.0" width="53" height="24"/>
@@ -105,7 +105,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAD-qZ-TTk">
-                                                            <rect key="frame" x="0.0" y="24" width="39.333333333333329" height="18"/>
+                                                            <rect key="frame" x="0.0" y="24" width="40" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.33838649611398963" green="0.33838649611398963" blue="0.33838649611398963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -288,7 +288,7 @@
             <objects>
                 <navigationController id="f0M-lj-Wsi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="home" id="6ty-bF-1as"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="hTB-fV-b5B">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hTB-fV-b5B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -453,13 +453,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2Ol-6j-1Xs">
                                                     <rect key="frame" x="20" y="8" width="366" height="43"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="752" verticalHuggingPriority="251" ambiguous="YES" text="Night mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti8-Gz-LdK">
-                                                            <rect key="frame" x="0.0" y="11.333333333333334" width="89.333333333333329" height="20.333333333333329"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="752" verticalHuggingPriority="251" text="Night mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ti8-Gz-LdK">
+                                                            <rect key="frame" x="0.0" y="11" width="90" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stN-YN-BQY">
+                                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stN-YN-BQY">
                                                             <rect key="frame" x="317" y="6" width="51" height="31"/>
                                                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                             <color key="onTintColor" red="0.0089661593264248607" green="0.0089661593264248607" blue="0.0089661593264248607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -553,14 +553,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkm-4E-7Fb">
+                                <rect key="frame" x="28" y="563" width="359" height="70"/>
+                                <fontDescription key="fontDescription" name="Pacifico" family="Pacifico" pointSize="28"/>
+                                <state key="normal" title=" Reset All ">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetAll:" destination="pGj-cw-JFm" eventType="touchUpInside" id="8Pv-FC-Ufk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="rkm-4E-7Fb" firstAttribute="centerX" secondItem="eVZ-M0-ChY" secondAttribute="centerX" id="1OK-5x-6Nv"/>
                             <constraint firstItem="53a-W3-PCp" firstAttribute="centerX" secondItem="eVZ-M0-ChY" secondAttribute="centerX" id="E1p-ZH-vsu"/>
                             <constraint firstItem="WOe-GK-l0t" firstAttribute="leading" secondItem="eVZ-M0-ChY" secondAttribute="leading" id="IWY-VY-AlL"/>
+                            <constraint firstItem="XzZ-kh-ytU" firstAttribute="top" secondItem="rkm-4E-7Fb" secondAttribute="bottom" constant="54" id="ZFH-jR-rE3"/>
+                            <constraint firstItem="rkm-4E-7Fb" firstAttribute="top" secondItem="WOe-GK-l0t" secondAttribute="bottom" constant="36" id="Zf1-Ek-Ehe"/>
                             <constraint firstItem="gIu-4u-YkL" firstAttribute="top" secondItem="53a-W3-PCp" secondAttribute="bottom" constant="21" id="etK-I1-2Ww"/>
                             <constraint firstAttribute="trailing" secondItem="WOe-GK-l0t" secondAttribute="trailing" id="gZp-Ns-ZPh"/>
                             <constraint firstItem="XzZ-kh-ytU" firstAttribute="top" secondItem="WOe-GK-l0t" secondAttribute="bottom" constant="160" id="reY-VJ-zWK"/>
+                            <constraint firstItem="rkm-4E-7Fb" firstAttribute="leading" secondItem="eVZ-M0-ChY" secondAttribute="leadingMargin" constant="8" id="tzp-l7-k5I"/>
                             <constraint firstItem="gIu-4u-YkL" firstAttribute="centerX" secondItem="eVZ-M0-ChY" secondAttribute="centerX" id="wZ9-Ui-QlE"/>
                             <constraint firstItem="53a-W3-PCp" firstAttribute="centerY" secondItem="eVZ-M0-ChY" secondAttribute="centerY" constant="-161" id="yLz-7A-LCz"/>
                         </constraints>
@@ -714,7 +728,7 @@
             <objects>
                 <navigationController id="qeM-SZ-Wkf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Assessment" image="assessment" id="WWr-oC-1O2"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="qbf-ek-c7C">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qbf-ek-c7C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -732,7 +746,7 @@
             <objects>
                 <navigationController id="i9G-XM-O00" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Words" image="myWords" id="3Fe-e6-CvI"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XzK-IC-Iog">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XzK-IC-Iog">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -771,7 +785,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kjq-79-WCu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Aka-r5-tfP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Aka-r5-tfP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

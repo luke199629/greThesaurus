@@ -29,6 +29,15 @@ class HomeViewController: UIViewController {
             ratingData = NSMutableArray(contentsOfFile: path2)!
         }
 
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let dataFilePath = paths[0].appendingPathComponent("ratingFile.plist")
+        if let data = try? Data(contentsOf: dataFilePath) {
+            // 3
+            let unarchiver = NSKeyedUnarchiver(forReadingWith: data)
+            ratingData = unarchiver.decodeObject(forKey: "ratingFile") as! NSMutableArray
+            unarchiver.finishDecoding()
+        }
+        
         self.navigationController?.navigationBar.barStyle = .blackTranslucent
         self.navigationController?.tabBarController?.tabBar.tintColor = .white
         

@@ -22,9 +22,9 @@ struct HomeContent {
 
 class SelectWordViewController: UITableViewController {
     
-    var wordData = NSArray()
-    var explData = NSArray()
-    var ratingData = NSArray()
+//    var wordData = NSArray()
+//    var explData = NSArray()
+//    var ratingData = NSArray()
     
     var passWord = ""
     var passExpl = ""
@@ -34,15 +34,15 @@ class SelectWordViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let path = Bundle.main.path(forResource: "lexicon", ofType: "plist") {
-            wordData = NSArray(contentsOfFile: path)!
-        }
-        if let path1 = Bundle.main.path(forResource: "expl", ofType: "plist") {
-            explData = NSArray(contentsOfFile: path1)!
-        }
-        if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
-            ratingData = NSArray(contentsOfFile: path2)!
-        }
+//        if let path = Bundle.main.path(forResource: "lexicon", ofType: "plist") {
+//            wordData = NSArray(contentsOfFile: path)!
+//        }
+//        if let path1 = Bundle.main.path(forResource: "expl", ofType: "plist") {
+//            explData = NSArray(contentsOfFile: path1)!
+//        }
+//        if let path2 = Bundle.main.path(forResource: "ratings", ofType: "plist") {
+//            ratingData = NSArray(contentsOfFile: path2)!
+//        }
         print("\(wordData[0])\(explData[0])\(ratingData[0])")
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

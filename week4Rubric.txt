@@ -1,4 +1,7 @@
 Rubric for Week 4
 Tasks done by Ke Lu:
 Progress bar dynamic percentage based on familiarity ratings
-added Memorizing functionality that gets the first word that has no rating for the user to learn
+Added Memorizing functionality that gets the first word that has no rating for the user to learn
+Enabled saving of progress and word ratings after quitting the app
+Implemented feature of progress bar refreshing
+Implemented progress resetting feature

@@ -24,9 +24,19 @@ class showWordController: UIViewController {
         let idx = wordData.index(of: passWord)
         print(idx)
         ratingData[idx] = String(operation)
-        let path2:String! = Bundle.main.path(forResource: "ratings", ofType: "plist")
-        ratingData.write(toFile: path2, atomically: true)
+//        let path2:String! = Bundle.main.path(forResource: "ratings", ofType: "plist")
+//        ratingData.write(toFile: path2, atomically: true)
+        
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let dataFilePath = paths[0].appendingPathComponent("ratingFile.plist")
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWith: data)
+        archiver.encode(ratingData, forKey: "ratingFile")
+        archiver.finishEncoding()
+        data.write(to: dataFilePath, atomically: true)
+        
         rating.text = String(operation)
+        
     }
 
 

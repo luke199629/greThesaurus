@@ -13,6 +13,32 @@ class ProgressViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var startButton: UIButton!
     
+
+    @IBAction func resetAll(_ sender: UIButton) {
+        for i in 0 ..< explData.count {
+            ratingData[i] = "0"
+        }
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        let dataFilePath = paths[0].appendingPathComponent("ratingFile.plist")
+        let data = NSMutableData()
+        let archiver = NSKeyedArchiver(forWritingWith: data)
+        archiver.encode(ratingData, forKey: "ratingFile")
+        archiver.finishEncoding()
+        data.write(to: dataFilePath, atomically: true)
+        
+        var progress: Float = 0.0
+        for i in 0 ..< ratingData.count {
+            if (ratingData[i] as! NSString).intValue != 0 {
+                progress += 1
+            }
+            
+        }
+        progress = progress / Float(ratingData.count)
+        progressLabel.text = String(format: "%.2f %%", progress*100)
+        progressBar.setProgress(progress, animated: true)
+
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
