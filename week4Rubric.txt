@@ -5,3 +5,4 @@ Added Memorizing functionality that gets the first word that has no rating for t
 Enabled saving of progress and word ratings after quitting the app
 Implemented feature of progress bar refreshing
 Implemented progress resetting feature
+Word list basing on level of familiarity without repetition

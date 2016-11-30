@@ -7,10 +7,11 @@
 //
 
 import UIKit
+var lists: [SpecificList] = []
 
 class AllListsViewControllerTableViewController: UITableViewController {
     
-    var lists: [SpecificList]
+    
     
     required init?(coder aDecoder: NSCoder) {
         // 1
@@ -22,21 +23,21 @@ class AllListsViewControllerTableViewController: UITableViewController {
         // 3
         
         
-        var list = SpecificList(name: "Level A", rate: 1)
+        var list = SpecificList(name: "Level 1", rate: 1)
         lists.append(list)
         
-        list = SpecificList(name: "Level B", rate: 2)
+        list = SpecificList(name: "Level 2", rate: 2)
         lists.append(list)
         
-        list = SpecificList(name: "Level C", rate: 3)
+        list = SpecificList(name: "Level 3", rate: 3)
         lists.append(list)
         
-        list = SpecificList(name: "Level D", rate: 4)
+        list = SpecificList(name: "Level 4", rate: 4)
         lists.append(list)
         
-        list = SpecificList(name: "Level E", rate: 5)
+        list = SpecificList(name: "Level 5", rate: 5)
         lists.append(list)
-//        saveSpecificLists()
+        //saveSpecificLists()
         loadSpecificLists()
         
         /*

@@ -37,6 +37,17 @@ class showWordController: UIViewController {
         
         rating.text = String(operation)
         
+        for i in 0 ..< 5 {
+            let tmp = lists[i].items.filter {$0.word != passWord}
+            lists[i].items = tmp
+        }
+        
+        let item = SpecificListItem()
+        item.word = passWord
+        item.expl = passExpl
+        item.rating = operation
+        lists[operation-1].items.append(item)
+        
     }
 
 
