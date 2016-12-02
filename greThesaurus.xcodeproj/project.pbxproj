@@ -14,6 +14,10 @@
 		23FE19D51DDDB03B00E94D02 /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D21DDDB03B00E94D02 /* lexicon.plist */; };
 		23FE19D61DDDB03B00E94D02 /* ratings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D31DDDB03B00E94D02 /* ratings.plist */; };
 		4B2036651DF133CB00896DE3 /* AssesmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */; };
+		4B2036681DF146E800896DE3 /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2036671DF146E800896DE3 /* QuestionCell.swift */; };
+		4B20366A1DF1484A00896DE3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2036691DF1484A00896DE3 /* TestViewController.swift */; };
+		4B20366C1DF14A0300896DE3 /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20366B1DF14A0300896DE3 /* data.swift */; };
+		4B20366E1DF14F0D00896DE3 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B20366D1DF14F0D00896DE3 /* ResultViewController.swift */; };
 		A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */; };
 		A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B71DD19E81002BD5C2 /* SpecificList.swift */; };
 		A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */; };
@@ -61,6 +65,10 @@
 		23FE19D21DDDB03B00E94D02 /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = lexicon.plist; path = lexicon/lexicon.plist; sourceTree = "<group>"; };
 		23FE19D31DDDB03B00E94D02 /* ratings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ratings.plist; path = lexicon/ratings.plist; sourceTree = "<group>"; };
 		4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssesmentViewController.swift; sourceTree = "<group>"; };
+		4B2036671DF146E800896DE3 /* QuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		4B2036691DF1484A00896DE3 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		4B20366B1DF14A0300896DE3 /* data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		4B20366D1DF14F0D00896DE3 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		A38588B71DD19E81002BD5C2 /* SpecificList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificList.swift; sourceTree = "<group>"; };
 		A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificListViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B2036661DF146DD00896DE3 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B2036671DF146E800896DE3 /* QuestionCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
 		A39E3A951DC6D21A00358049 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +160,7 @@
 		A39E3AA01DC6D21A00358049 /* greThesaurus */ = {
 			isa = PBXGroup;
 			children = (
+				4B2036661DF146DD00896DE3 /* cells */,
 				A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */,
 				A3C8E2321DED3F2900A71572 /* ProgressViewController.swift */,
 				23604FE61DDD59DA0061D1A8 /* HomeViewController.swift */,
@@ -165,6 +182,9 @@
 				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
 				23604FE81DDD5EE00061D1A8 /* Extensions.swift */,
 				4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */,
+				4B2036691DF1484A00896DE3 /* TestViewController.swift */,
+				4B20366B1DF14A0300896DE3 /* data.swift */,
+				4B20366D1DF14F0D00896DE3 /* ResultViewController.swift */,
 			);
 			path = greThesaurus;
 			sourceTree = "<group>";
@@ -328,7 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */,
+				4B20366A1DF1484A00896DE3 /* TestViewController.swift in Sources */,
+				4B20366E1DF14F0D00896DE3 /* ResultViewController.swift in Sources */,
 				A38588BE1DD1D13A002BD5C2 /* SpecificListItem.swift in Sources */,
+				4B20366C1DF14A0300896DE3 /* data.swift in Sources */,
 				A38588C01DD1E460002BD5C2 /* AddWordViewController.swift in Sources */,
 				A39E3AA21DC6D21A00358049 /* AppDelegate.swift in Sources */,
 				A3F4284C1DDB84C6005B792E /* showWordController.swift in Sources */,
@@ -342,6 +365,7 @@
 				A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */,
 				4B2036651DF133CB00896DE3 /* AssesmentViewController.swift in Sources */,
 				A39725E21DC9C363009D3828 /* SelectWordViewController.swift in Sources */,
+				4B2036681DF146E800896DE3 /* QuestionCell.swift in Sources */,
 				A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */,
 				A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */,
 			);
