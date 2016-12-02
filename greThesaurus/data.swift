@@ -2,7 +2,7 @@
 //  data.swift
 //  greThesaurus
 //
-//  Created by Ding Zhang on 12/2/16.
+//  Created by zhao yuanyuan on 12/2/16.
 //  Copyright © 2016 kelu2zhao102. All rights reserved.
 //
 
