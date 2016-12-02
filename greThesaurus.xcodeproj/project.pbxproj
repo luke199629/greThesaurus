@@ -13,6 +13,7 @@
 		23FE19D41DDDB03B00E94D02 /* expl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D11DDDB03B00E94D02 /* expl.plist */; };
 		23FE19D51DDDB03B00E94D02 /* lexicon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D21DDDB03B00E94D02 /* lexicon.plist */; };
 		23FE19D61DDDB03B00E94D02 /* ratings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23FE19D31DDDB03B00E94D02 /* ratings.plist */; };
+		4B2036651DF133CB00896DE3 /* AssesmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */; };
 		A38588B61DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */; };
 		A38588B81DD19E82002BD5C2 /* SpecificList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588B71DD19E81002BD5C2 /* SpecificList.swift */; };
 		A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */; };
@@ -59,6 +60,7 @@
 		23FE19D11DDDB03B00E94D02 /* expl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = expl.plist; path = lexicon/expl.plist; sourceTree = "<group>"; };
 		23FE19D21DDDB03B00E94D02 /* lexicon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = lexicon.plist; path = lexicon/lexicon.plist; sourceTree = "<group>"; };
 		23FE19D31DDDB03B00E94D02 /* ratings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = ratings.plist; path = lexicon/ratings.plist; sourceTree = "<group>"; };
+		4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssesmentViewController.swift; sourceTree = "<group>"; };
 		A38588B51DD193EF002BD5C2 /* AllListsViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllListsViewControllerTableViewController.swift; sourceTree = "<group>"; };
 		A38588B71DD19E81002BD5C2 /* SpecificList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificList.swift; sourceTree = "<group>"; };
 		A38588BB1DD1BF08002BD5C2 /* SpecificListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecificListViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				A3FCCE5B1DC836DA00D1E447 /* MainViewController.swift */,
 				A39E3AAA1DC6D21A00358049 /* Assets.xcassets */,
 				23604FE81DDD5EE00061D1A8 /* Extensions.swift */,
+				4B2036641DF133CB00896DE3 /* AssesmentViewController.swift */,
 			);
 			path = greThesaurus;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				23604FE91DDD5EE00061D1A8 /* Extensions.swift in Sources */,
 				A3C8E2331DED3F2900A71572 /* ProgressViewController.swift in Sources */,
 				A39725E41DC9D134009D3828 /* MyWordsViewController.swift in Sources */,
+				4B2036651DF133CB00896DE3 /* AssesmentViewController.swift in Sources */,
 				A39725E21DC9C363009D3828 /* SelectWordViewController.swift in Sources */,
 				A38588BC1DD1BF08002BD5C2 /* SpecificListViewController.swift in Sources */,
 				A39725EA1DC9E2CE009D3828 /* SettingsViewController.swift in Sources */,
