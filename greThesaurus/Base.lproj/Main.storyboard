@@ -599,7 +599,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Being a little bitch" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qru-Oq-yRF">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sample Question" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qru-Oq-yRF">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="226"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="226" id="QzL-Z1-iFa"/>
@@ -614,7 +614,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="Xqj-3e-tEN"/>
                                                     </constraints>
-                                                    <state key="normal" title="Wang Yu"/>
+                                                    <state key="normal" title="Option1"/>
                                                     <connections>
                                                         <action selector="didClickOption1:" destination="ehI-qz-tot" eventType="touchUpInside" id="c5S-V3-jqm"/>
                                                     </connections>
@@ -625,7 +625,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="ZbY-Rr-DDa"/>
                                                     </constraints>
-                                                    <state key="normal" title="Wang Yu"/>
+                                                    <state key="normal" title="Option2"/>
                                                     <connections>
                                                         <action selector="didClickOption2:" destination="ehI-qz-tot" eventType="touchUpInside" id="6Qk-zd-gvW"/>
                                                     </connections>
@@ -636,7 +636,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="ALX-UP-HKV"/>
                                                     </constraints>
-                                                    <state key="normal" title="Wang Yu"/>
+                                                    <state key="normal" title="Option3"/>
                                                     <connections>
                                                         <action selector="didClickOption3:" destination="ehI-qz-tot" eventType="touchUpInside" id="fjo-RZ-3RO"/>
                                                     </connections>
@@ -647,7 +647,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="xWG-zb-r6Q"/>
                                                     </constraints>
-                                                    <state key="normal" title="Wang Yu"/>
+                                                    <state key="normal" title="Option4"/>
                                                     <connections>
                                                         <action selector="didClickOption4:" destination="ehI-qz-tot" eventType="touchUpInside" id="E9m-WJ-0Tl"/>
                                                     </connections>
@@ -717,7 +717,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="167" id="1hT-pv-j0P"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.0" green="0.81755990932642486" blue="0.22734548330132198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -727,7 +727,7 @@
                                     <constraint firstAttribute="height" constant="167" id="epA-Mw-tzw"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="167" id="jWs-Qz-pNp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.81755990932642486" green="0.28199618042683788" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
