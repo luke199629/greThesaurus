@@ -1,8 +1,18 @@
 Rubric for Week 4
 Tasks done by Ke Lu:
+
 Progress bar dynamic percentage based on familiarity ratings -- 2 hours
-Added Memorizing functionality that gets the first word that has no rating for the user to learn -- 2hours
+Added Memorizing functionality that gets the first word that has no rating for the user to learn -- 2 hours
 Enabled saving of progress and word ratings after quitting the app -- 3 hours
 Implemented feature of progress bar refreshing -- 1 hour
 Implemented progress resetting feature -- 2 hours
 Word list basing on level of familiarity without repetition -- 2 hours
+
+Tasks done by Yuanyuan Zhao:
+
+Built the practice test module -- 3.5 hours
+Word memorizing algorithm design -- 0.5 hour
+Improved memorizing progress by making the next word available after the previous word -- 1 hour
+Collecting feedbacks -- 1 hour
+Overall UI designing improvement -- 4 hours
+Manutal test plan - 40 min
