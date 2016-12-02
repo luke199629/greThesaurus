@@ -13,6 +13,6 @@ Tasks done by Yuanyuan Zhao:
 Built the practice test module -- 3.5 hours
 Word memorizing algorithm design -- 0.5 hour
 Improved memorizing progress by making the next word available after the previous word -- 1 hour
-Collecting feedbacks -- 1 hour
+Collecting feedbacks -- 0.5 hour
 Overall UI designing improvement -- 4 hours
 Manutal test plan - 40 min
